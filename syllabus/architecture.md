@@ -51,9 +51,10 @@ Commissioned by ArkDes and Nieuwe Instituut with support from Shedhalle (Zürich
 ## File Structure
 
 ```
-mother.py           1271 lines    main agent
-brood.py             693 lines    brood agent
-sync_memories_now.py 114 lines    KB sync util
+mother.py           1270 lines    main agent
+brood.py             692 lines    brood agent
+ourbrood.py          664 lines    dual-agent launcher with stereo separation
+sync_memories_now.py 113 lines    KB sync util
 mother_system_prompt.md            system prompt
 memories/mother_memory.txt         memory store
 conversations/*.txt                transcripts
@@ -90,6 +91,16 @@ YYYY-MM-DD HH:MM | tag | content
 ```
 Tags: `recap` (auto 90s), `note`
 
+### Greetings
+`GREETINGS_BANK` — 3 entries for `{{greeting}}` dynamic variable:
+- `" "` (no greeting)
+- `"Hey there"`
+- `"Hey dear"`
+
+### Notes
+- IDLE_TIMEOUT_SECONDS = 100 (configurable, alternatives commented)
+- RECAP_INTERVAL_S = 90 (auto-recap every 90 seconds)
+
 ### Components
 ```
 MIC → RESAMPLE → WEBSOCKET → LLM → PROMPT → TTS → KB → SPEAKER
@@ -123,13 +134,14 @@ Always-on ElevenLabs voice agent. Wake-word activated ("brood"). Multi-channel a
 - Transcript log (console)
 
 ### Dataset
-Remembered words from audience. Stored in `brood_memory.txt`. Captures audience interactions. Persists across sessions.
+Session-scoped only. No persistent memory between sessions.
 
 ### Notes
-- Wake word "brood" activates 15s window
+- Wake word "brood" activates 15s window (`WAKE_WINDOW_S = 15.0`)
 - Outside window: speech muted + interrupted
 - No ACTIVE/LISTENING toggle — always-on
 - Supervisor process auto-restarts on crash
+- IDLE_TIMEOUT_S = 300 (5 minutes idle before mute)
 
 ### Components
 ```
@@ -144,11 +156,53 @@ MIC → RESAMPLE → WEBSOCKET → LLM → TTS → SPEAKER → ROUTE
 
 ---
 
+---
+
+## ourbrood.py — Dual-Agent Launcher
+
+### Description
+Runs both Mother and Brood agents simultaneously with stereo separation and wake-word switching. Provides unified interface for the full OurBrood experience with smooth fade transitions between agents.
+
+### Inputs
+- Microphone audio (PCM 44.1 kHz mono)
+- `.env`: `API_KEY`, `MOTHER_AGENT_ID`, `BROOD_AGENT_ID`
+- Wake-word keywords for switching
+- Audio configuration: `DEFAULT_MOTHER_LEFT`, `DEFAULT_BROOD_LEFT`
+
+### Configuration
+```python
+DEFAULT_MOTHER_LEFT = True   # Mother on LEFT speaker
+DEFAULT_BROOD_LEFT  = False  # Brood on RIGHT speaker
+DEFAULT_MOTHER_VOL  = 0.20   # Mother volume (20%)
+DEFAULT_BROOD_VOL   = 0.90   # Brood volume (90%)
+FADE_OUT_DURATION_MS = 300   # Transition fade duration
+```
+
+### Wake-Word Keywords
+```python
+MOTHER_KEYWORDS = {"mother", "modder", "mutter", "mamma", "mama", ...}
+BROOD_KEYWORDS = {"brood", "bruton", "brute", "bruce", "bruge", ...}
+```
+
+### Outputs
+- Stereo audio: Mother (LEFT) / Brood (RIGHT)
+- Live transcript to `./conversations/`
+- Session logs with graceful exit handling
+
+### Notes
+- Fade transitions for smooth handoff between agents
+- Wake-word switching detects keywords in user speech
+- Auto-idle after silence to save API usage
+- Graceful exit with Ctrl+C saves logs properly
+
+---
+
 ## Key Architecture Concepts
 
 ### Two-Agent System
-1. **Mother** — Persistent, facilitator, psychodrama guide
-2. **Brood** — Ephemeral, audience-capturing, wake-word activated
+1. **Mother** — Persistent, facilitator, psychodrama guide (1270 lines)
+2. **Brood** — Ephemeral, audience-capturing, wake-word activated (692 lines)
+3. **OurBrood** — Dual-agent launcher with stereo separation (664 lines)
 
 ### Memory Architecture
 - **Mother**: Long-term memory via plaintext + KB sync
