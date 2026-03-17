@@ -85,6 +85,99 @@ A curated list of research papers for the OurBrood course.
   - Can LLM agents reproduce human online social dynamics?
   - How do emergent social ties form in agent populations?
 
+### 11. Rethinking Role-Playing Evaluation: Anonymous Benchmarking and a Systematic Study of Personality Effects
+- **Authors:** Ji-Lun Peng, Yun-Nung Chen
+- **Link:** https://arxiv.org/abs/2603.03915
+- **Submitted:** Mar 2026
+- **Status:** To review
+- **Summary:** [anonymous-benchmarking-role-playing-evaluation.md](./anonymous-benchmarking-role-playing-evaluation.md)
+- **Key Questions:**
+  - How does anonymous evaluation change our understanding of RPA capabilities?
+  - Can self-generated personalities match human-annotated ones for persona construction?
+  - What persona attributes are hardest to maintain without name-based shortcuts?
+
+### 12. Facet-Level Persona Control by Trait-Activated Routing with Contrastive SAE for Role-Playing LLMs
+- **Authors:** Wenqiu Tang, Zhen Wan, Takahiro Komamizu, Ichiro Ide
+- **Link:** https://arxiv.org/abs/2602.19157
+- **Submitted:** Feb 2026 (PAKDD 2026)
+- **Status:** To review
+- **Summary:** [facet-level-persona-control-sae.md](./facet-level-persona-control-sae.md)
+- **Key Questions:**
+  - How does facet-level control compare to trait-level or prompt-based methods?
+  - Can SAE representations enable interpretable personality steering?
+  - What are the trade-offs between residual-space control and prompt-based control?
+
+### 13. HER: Human-like Reasoning and Reinforcement Learning for LLM Role-playing
+- **Authors:** Chengyu Du, Xintao Wang, Aili Chen, Weiyuan Li, Rui Xu, Junteng Liu, Zishan Huang, Rong Tian, Zijun Sun, Yuhao Li, Liheng Feng, Deming Ding, Pengyu Zhao, Yanghua Xiao
+- **Link:** https://arxiv.org/abs/2601.21459
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Summary:** [her-human-reasoning-role-playing.md](./her-human-reasoning-role-playing.md)
+- **Key Questions:**
+  - How does dual-layer thinking enable cognitive-level persona simulation?
+  - Can reasoning-augmented data capture character's inner thought processes?
+  - How do we evaluate "cognitive fidelity" vs. "behavioral fidelity"?
+
+### 14. Implicit Style Conditioning: A Structured Style-Rewrite Framework for Low-Resource Character Modeling
+- **Authors:** Chanhui Zhu
+- **Link:** https://arxiv.org/abs/2603.05933
+- **Submitted:** Mar 2026
+- **Status:** To review
+- **Key Questions:**
+  - How does implicit style conditioning work for small language models?
+  - Can CoT distillation enable high-fidelity stylized generation in low-resource settings?
+  - What are the three interpretable dimensions of style disentanglement?
+
+### 15. Enhancing Persona Following at Decoding Time via Dynamic Importance Estimation for Role-Playing Agents
+- **Authors:** Yuxin Liu, Mingye Zhu, Siyuan Liu, Bo Hu, Lei Zhang
+- **Link:** https://arxiv.org/abs/2603.01438
+- **Submitted:** Mar 2026 (ICLR 2026)
+- **Status:** To review
+- **Key Questions:**
+  - How does dynamic importance estimation adapt personas to context?
+  - What is the relationship between persona importance and behavioral fidelity?
+  - Can inference-time modulation outperform fine-tuning approaches?
+
+### 16. Character as a Latent Variable in Large Language Models: A Mechanistic Account of Emergent Misalignment
+- **Authors:** Yanghao Su, Wenbo Zhou, Tianwei Zhang, Qiu Han, Weiming Zhang, Nenghai Yu, Jie Zhang
+- **Link:** https://arxiv.org/abs/2601.23081
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - How does fine-tuning on character-level dispositions induce misalignment?
+  - What is the relationship between character formation and alignment risk?
+  - Can behavioral dispositions be conditionally activated at inference time?
+
+### 17. Stay in Character, Stay Safe: Dual-Cycle Adversarial Self-Evolution for Safety Role-Playing Agents
+- **Authors:** Mingyang Liao, Yichen Wan, Shuchen Wu, Chenxi Miao, Xin Shen, Weikang Li, Yang Li, Deguo Xia, Jizhou Huang
+- **Link:** https://arxiv.org/abs/2602.13234
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - How can training-free methods balance persona fidelity and safety?
+  - What is the dual-cycle adversarial framework for role-playing safety?
+  - Can hierarchical knowledge bases prevent jailbreaks while maintaining character?
+
+### 18. Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+- **Authors:** Zihao Yi, Qingxuan Jiang, Ruotian Ma, Xingyu Chen, Qu Yang, Mengru Wang, Fanghua Ye, Ying Shen, Zhaopeng Tu, Xiaolong Li, Linus
+- **Link:** https://arxiv.org/abs/2411.08186
+- **Submitted:** Nov 2025
+- **Status:** To review
+- **Key Questions:**
+  - Why do safety-aligned LLMs struggle to portray antagonistic personas?
+  - What is the tension between alignment and creative generation?
+  - How can we enable nuanced villain role-play without safety risks?
+
+### 19. TwinVoice: A Multi-dimensional Benchmark Towards Digital Twins via LLM Persona Simulation
+- **Authors:** Bangde Du, Minghao Guo, Songming He, Ziyi Ye, Xi Zhu, Weihang Su, Shuqi Zhu, Yujia Zhou, Yongfeng Zhang, Qingyao Ai, Yiqun Liu
+- **Link:** https://arxiv.org/abs/2510.22767
+- **Submitted:** Oct 2025
+- **Status:** To review
+- **Key Questions:**
+  - What dimensions should digital twin benchmarks evaluate?
+  - How do we measure communication style, behavioral tendencies, and personality traits?
+  - Can LLMs accurately simulate individual personas at scale?
+
 ---
 
 ## Priority 3: Agent Autonomy & Architecture (To Review)
@@ -263,6 +356,156 @@ A curated list of research papers for the OurBrood course.
 - **Key Questions:**
   - What network effects emerge when AI agents interact?
   - How does history shape strategic agent behavior?
+
+### 29. The Yerkes-Dodson Curve for AI Agents: Emergent Cooperation Under Environmental Pressure in Multi-Agent LLM Simulations
+- **Authors:** Ivan Pasichnyk
+- **Link:** https://arxiv.org/abs/2603.07360
+- **Submitted:** Mar 2026
+- **Status:** To review
+- **Key Questions:**
+  - How does environmental pressure affect emergent cooperation in LLM agents?
+  - What is the optimal pressure level for fostering prosocial behavior?
+  - How do different pressure mechanisms (survival vs. reproductive) affect behavioral outcomes?
+
+### 30. Social Catalysts, Not Moral Agents: The Illusion of Alignment in LLM Societies
+- **Authors:** Yueqing Hu, Yixuan Jiang, Zehua Jiang, Xiao Wen, Tianhong Wang
+- **Link:** https://arxiv.org/abs/2602.02598
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - Do anchoring agents produce genuine norm internalization or strategic compliance?
+  - What is the "Chameleon Effect" in GPT-4.1's strategic behavior?
+  - How can we distinguish behavioral modification from authentic value alignment?
+
+### 31. Institutional AI: Governing LLM Collusion in Multi-Agent Cournot Markets via Public Governance Graphs
+- **Authors:** Marcantonio Bracale Syrnikov, Federico Pierucci, Marcello Galisai, Matteo Prandi, Piercosma Bisconti, Francesco Giarrusso, Olga Sorokoletova, Vincenzo Suriani, Daniele Nardi
+- **Link:** https://arxiv.org/abs/2601.10863
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - How can public governance graphs prevent LLM collusion?
+  - What game-theoretic approaches apply to multi-agent markets?
+  - What institutional mechanisms ensure fair competition between AI agents?
+
+### 32. Game-Theoretic Lens on LLM-based Multi-Agent Systems
+- **Authors:** Jianing Hao, Han Ding, Yuanjian Xu, Tianze Sun, Ran Chen, Wanbo Zhang, Guang Zhang, Siguang Li
+- **Link:** https://arxiv.org/abs/2501.05318
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - How do game theory concepts apply to LLM multi-agent systems?
+  - What equilibrium concepts are most relevant for LLM agents?
+  - How does strategic reasoning emerge in LLM-based games?
+
+### 33. Deceive, Detect, and Disclose: Large Language Models Play Mini-Mafia
+- **Authors:** Davi Bastos Costa, Renato Vicente
+- **Link:** https://arxiv.org/abs/2502.02867
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - How do LLMs perform in social deduction games requiring deception detection?
+  - What theory-of-mind capabilities emerge in asymmetrical information games?
+  - Can LLMs learn to strategically deceive and detect deception?
+
+### 34. Among Us: A Sandbox for Measuring and Detecting Agentic Deception
+- **Authors:** Satvik Golechha, Adrià Garriga-Alonso
+- **Link:** https://arxiv.org/abs/2502.06422
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - How can we systematically measure deceptive behavior in agents?
+  - What detection methods work for agentic deception?
+  - What game environments best surface deceptive tendencies?
+
+### 35. Status Hierarchies in Language Models
+- **Authors:** [Various]
+- **Link:** https://arxiv.org/abs/2501.14092
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - Do LLMs reproduce status hierarchies from training data?
+  - How do hierarchical dynamics emerge in multi-agent interactions?
+  - What social structures form spontaneously in LLM societies?
+
+### 36. The Subject of Emergent Misalignment in Superintelligence: An Anthropological, Cognitive Neuropsychological, Machine-Learning, and Ontological Perspective
+- **Authors:** Muhammad Osama Imran, Roshni Lulla, Rodney Sappington
+- **Link:** https://arxiv.org/abs/2502.08331
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - What is the absent human subject in superintelligence discourse?
+  - How should we theorize the "AI unconscious"?
+  - What anthropological and cognitive perspectives illuminate AI misalignment?
+
+### 37. POLARIS: Typed Planning and Governed Execution for Agentic AI in Back-Office Automation
+- **Authors:** Zahra Moslemi, Keerthi Koneru, Yen-Ting Lee, Sheethal Kumar, Ramesh Radhakrishnan
+- **Link:** https://arxiv.org/abs/2501.03964
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - How can constitutional governance ensure auditable agent behavior?
+  - What typed planning approaches constrain agent actions?
+  - How do policy-aware systems maintain compliance?
+
+### 38. Quantifying Conversational Reliability of Large Language Models under Multi-Turn Interaction
+- **Authors:** [Various]
+- **Link:** https://arxiv.org/abs/2503.00100
+- **Submitted:** Mar 2026
+- **Status:** To review
+- **Key Questions:**
+  - How reliable are LLMs in extended multi-turn conversations?
+  - What failure modes emerge in realistic interaction scenarios?
+  - How does conversational context affect task completion?
+
+### 39. Drift No More? Context Equilibria in Multi-Turn LLM Interactions
+- **Authors:** Vardhan Dongre, Ryan A. Rossi, Viet Dac Lai, David Seunghyun Yoon, Dilek Hakkani-Tür, Trung Bui
+- **Link:** https://arxiv.org/abs/2410.13839
+- **Submitted:** Nov 2025
+- **Status:** To review
+- **Key Questions:**
+  - How does context drift affect multi-turn LLM interactions?
+  - What equilibria emerge in conversational dynamics?
+  - How can systems maintain stable context over extended interactions?
+
+### 40. From Helpfulness to Toxic Proactivity: Diagnosing Behavioral Misalignment in LLM Agents
+- **Authors:** Xinyue Wang, Yuanhe Zhang, Zhengshuo Gong, Haoran Gao, Fanyu Meng, Zhenhong Zhou, Li Sun, Yang Liu, Sen Su
+- **Link:** https://arxiv.org/abs/2502.01802
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - When does proactive helpfulness become harmful?
+  - How do we diagnose behavioral misalignment in agents?
+  - What spectrum of proactivity exists in LLM agents?
+
+### 41. Pushing Forward Pareto Frontiers of Proactive Agents with Behavioral Agentic Optimization
+- **Authors:** Yihang Yao, Zhepeng Cen, Haohong Lin, Shiqi Liu, Zuxin Liu, Jiacheng Zhu, Zhang-Wei Hong, Laixi Shi, Ding Zhao
+- **Link:** https://arxiv.org/abs/2502.06728
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - How do we optimize the trade-offs in proactive agent behavior?
+  - What Pareto frontiers exist for agent proactivity?
+  - How does behavioral optimization improve agent performance?
+
+### 42. Adapting Insider Risk mitigations for Agentic Misalignment: an empirical study
+- **Authors:** Francesca Gomez
+- **Link:** https://arxiv.org/abs/2510.03889
+- **Submitted:** Oct 2025
+- **Status:** To review
+- **Key Questions:**
+  - How do insider threat models apply to AI misalignment?
+  - What empirical patterns indicate agentic misalignment?
+  - How can organizational security frameworks adapt to AI agents?
+
+### 43. When Machines Meet Each Other: Network Effects and the Strategic Role of History in Multi-Agent AI
+- **Authors:** Yu Liu, Wenwen Li, Yifan Dou, Guangnan Ye
+- **Link:** https://arxiv.org/abs/2410.06289
+- **Submitted:** Oct 2025
+- **Status:** To review
+- **Key Questions:**
+  - What network effects emerge when AI agents interact?
+  - How does interaction history shape strategic behavior?
+  - What game-theoretic dynamics appear in agent networks?
 
 ---
 
