@@ -11,12 +11,39 @@
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │  ▶ STATUS: ACTIVE                                                   │
-│  ▶ FOCUS: LLM & Agentic Conversational SOTA                        │
-│  ▶ INITIATIVE: OMSK Social Club                                    │
-│  ▶ PAPERS: 44 indexed | 3 reviewed | 41 pending                    │
+│  ▶ FOCUS: OurBrood AI Agent Architecture                           │
+│  ▶ INITIATIVE: OMSK Social Club / SEMILLA.AI Studio               │
+│  ▶ PAPERS: 52 indexed | 29 reviewed | Architecture-aligned         │
 │  ▶ LAST SYNC: 2026-03-17                                           │
 └─────────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## ░▒▓█ ARCHITECTURE ALIGNMENT █▓▒░
+
+This research repository is aligned with the **OurBrood AI Agent Architecture**:
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│  mother.py (1271 lines)          brood.py (693 lines)              │
+│  ─────────────────────           ─────────────────────             │
+│  • Guardian/facilitator          • Wake-word activated             │
+│  • Psychodrama sessions          • Stateless, session-scoped       │
+│  • Persistent memory (KB)        • Multi-channel audio            │
+│  • ElevenLabs TTS                • 15-second activation window    │
+│  • Long-term recall              • Captures audience interactions  │
+│                                                                     │
+│  Research focus:                  Research focus:                   │
+│  ─ Psychodrama facilitation      ─ Voice agent architectures       │
+│  ─ Empathy modeling              ─ Wake-word systems               │
+│  ─ Multi-session memory          ─ Stateless agent design          │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+See [`syllabus/architecture.md`](syllabus/architecture.md) for full architecture documentation.
 
 ---
 
@@ -25,10 +52,10 @@
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                                                                  │
-│  [?] How do LLMs develop and maintain consistent personas?        │
-│  [?] What makes an AI system "agentic" vs. merely conversational?│
-│  [?] How do we measure and control autonomy in deployed agents?   │
-│  [?] What happens when multiple AI agents interact?              │
+│  [?] How do AI facilitators guide psychodrama sessions?          │
+│  [?] What makes voice agents effective in immersive contexts?    │
+│  [?] How does Real Game Play methodology translate to AI?       │
+│  [?] What are the safety implications of AI-guided exploration? │
 │                                                                  │
 └──────────────────────────────────────────────────────────────────┘
 ```
@@ -39,23 +66,74 @@
 
 ```bash
 ourbrood-research/
-├── README.md                    # this file
+├── README.md                       # this file
 ├── syllabus/
-│   └── syllabus.md              # 12-week course structure
+│   ├── syllabus.md                 # 12-week course structure
+│   └── architecture.md             # Mother/Brood AI architecture
 ├── papers/
-│   ├── papers-to-review.md      # master index [44 papers]
-│   ├── resources.md             # labs, arXiv queries, conferences
-│   ├── persona-selection-model.md     # [REVIEWED] Anthropic Feb 2026
-│   ├── assistant-axis.md              # [REVIEWED] Anthropic Jan 2026
-│   └── measuring-agent-autonomy.md    # [REVIEWED] Anthropic Feb 2026
-├── notes/                       # [empty] research notes
-├── experiments/                 # [empty] experimental designs
-└── presentations/               # [empty] slides and materials
+│   ├── papers-to-review.md         # master index [52 papers]
+│   ├── resources.md                # labs, arXiv queries, conferences
+│   ├── participatory-ai-art-findings.md  # [NEW] RGP methodology
+│   │
+│   ├── Priority 0: OurBrood Core ─────────────────────────────────
+│   ├── voxrole-*.md                # Voice role-playing evaluation
+│   ├── disempowerment-*.md         # Safety framework
+│   ├── memguide-*.md               # Multi-session memory
+│   ├── tau-voice-*.md              # Full-duplex voice
+│   ├── himem-*.md                  # Hierarchical memory
+│   ├── empathy-*.md                # Active inference empathy
+│   │
+│   ├── Priority 1-2: Persona & Character ────────────────────────
+│   ├── persona-selection-model.md  # [REVIEWED]
+│   ├── assistant-axis.md           # [REVIEWED]
+│   ├── her-*.md                    # Human-like reasoning
+│   ├── anonymous-*.md              # Role-playing evaluation
+│   │
+│   └── Priority 3-7: Multi-Agent, Alignment, etc. ────────────────
+│       └── [29 additional papers]
+├── notes/                          # [empty] research notes
+├── experiments/                    # [empty] experimental designs
+└── presentations/                   # [empty] slides and materials
 ```
 
 ---
 
 ## ░▒▓█ RESEARCH DOMAINS █▓▒░
+
+### ┣━━ [00] OURBROOD CORE (Architecture-Aligned)
+
+> Papers directly applicable to Mother.py and Brood.py implementation.
+
+```
+STATE:    ACTIVE
+PAPERS:   24 indexed
+STATUS:   Integration in progress
+
+KEY INSIGHT:
+┌────────────────────────────────────────────────────────────────┐
+│ Three research streams aligned with our two-agent architecture: │
+│                                                                 │
+│ 1. Psychodrama Facilitation ── Mother.py as guide/facilitator   │
+│ 2. Voice + Memory Architecture ─ Both agents (TTS, KB, state)  │
+│ 3. Real Game Play ─────────── OMSK methodology, participatory  │
+└────────────────────────────────────────────────────────────────┘
+```
+
+**Featured Papers:**
+
+| Paper | Focus | OurBrood Connection |
+|-------|-------|---------------------|
+| `VoxRole` | Speech role-playing evaluation | Mother's voice persona |
+| `Disempowerment Patterns` | Safety in guided exploration | Mother.py safety |
+| `MemGuide` | Multi-session intent-driven memory | Mother's KB retrieval |
+| `τ-Voice` | Full-duplex voice agents | Real-time listening/speaking |
+| `VoiceAgentRAG` | Fast/Slow Thinker pattern | Brood (fast) / Mother (slow) |
+| `HiMem` | Hierarchical memory | Mother's memory architecture |
+| `AdaMARP` | Multi-agent immersive role-play | RGP collective storytelling |
+| `Drama Machine` | Character simulation | RGP character transformation |
+| `Human-AI Sovereignty` | Power dynamics in co-creation | Negotiating responsibility |
+
+---
 
 ### ┣━━ [01] LLM PERSONALITY & CHARACTER MODELING
 
@@ -63,22 +141,22 @@ ourbrood-research/
 
 ```
 STATE:    ACTIVE
-PAPERS:   7 indexed
+PAPERS:   13 indexed
 STATUS:   Persona Selection Model reviewed
 
 KEY INSIGHT:
 ┌────────────────────────────────────────────────────────────────┐
 │ AI assistants enact personas learned during pretraining—they   │
-│ simulate characters rather than "being" personalities.          │
-│ Training refines, it doesn't create.                           │
+│ simulate characters rather than "being" personalities.        │
+│ Training refines, it doesn't create.                         │
 └────────────────────────────────────────────────────────────────┘
 ```
 
 **Featured Papers:**
 - `The Persona Selection Model` ─ Anthropic, Feb 2026 ─ **[REVIEWED]**
 - `The Assistant Axis` ─ Anthropic, Jan 2026 ─ **[REVIEWED]**
-- `From Persona to Personalization` ─ arXiv:2404.00218
-- `The Oscars of AI Theater` ─ arXiv:2501.00787
+- `HER: Human-like Reasoning for Role-playing` ─ arXiv:2601.21459
+- `Facet-level Persona Control via SAE` ─ arXiv:2602.19157
 
 ---
 
@@ -88,22 +166,21 @@ KEY INSIGHT:
 
 ```
 STATE:    ACTIVE
-PAPERS:   5 indexed
+PAPERS:   6 indexed
 STATUS:   Measuring Agent Autonomy reviewed
 
 KEY INSIGHT:
 ┌────────────────────────────────────────────────────────────────┐
 │ Deployment overhang—models can handle more autonomy than they  │
-│ are currently granted. Experienced users shift from           │
+│ are currently granted. Experienced users shift from          │
 │ pre-approval to active monitoring.                            │
 └────────────────────────────────────────────────────────────────┘
 ```
 
 **Featured Papers:**
 - `Measuring AI Agent Autonomy in Practice` ─ Anthropic, Feb 2026 ─ **[REVIEWED]**
-- `PEPA: Persistently Autonomous Embodied Agent` ─ arXiv:2502.11755
-- `From Prompt-Response to Goal-Directed Systems` ─ arXiv:2502.05876
-- `Autonomy-Induced Security Risks` ─ arXiv:2506.21847
+- `Yerkes-Dodson Curve for AI Agents` ─ arXiv:2603.07360
+- `Unintended Misalignment from Agentic Fine-Tuning` ─ arXiv:2508.11952
 
 ---
 
@@ -114,39 +191,24 @@ KEY INSIGHT:
 ```
 STATE:    EXPANDING
 PAPERS:   14 indexed
-STATUS:  Multiple papers pending review
+STATUS:   Multiple papers pending review
 
 KEY INSIGHT:
 ┌────────────────────────────────────────────────────────────────┐
 │ Social motivation and governance structures become critical    │
-│ as agents interact. Deception and coordination failures        │
-│ are emergent concerns.                                         │
+│ as agents interact. Deception and coordination failures       │
+│ are emergent concerns.                                       │
 └────────────────────────────────────────────────────────────────┘
 ```
 
 **Featured Papers:**
-- `Molt Dynamics: Emergent Social Phenomena` ─ arXiv:2503.01067
-- `The Moltbook Illusion` ─ arXiv:2502.04791
-- `Symphony-Coord: Emergent Coordination` ─ arXiv:2501.19083
-- `Evolving Interpretable Constitutions` ─ arXiv:2501.19041
-- `Agent Drift: Behavioral Degradation` ─ arXiv:2501.03489
+- `Institutional AI Governance` ─ arXiv:2601.10863
+- `Social Catalysts, Not Moral Agents` ─ arXiv:2602.02598
 - `Game-Theoretic Lens on Multi-Agent Systems` ─ arXiv:2501.05318
 
 ---
 
-### ┣━━ [04] CONVERSATIONAL SOTA
-
-> Latest developments in dialogue systems and role-playing agents.
-
-```
-STATE:    ACTIVE
-PAPERS:   3 indexed
-STATUS:   Survey papers pending review
-```
-
----
-
-### ┣━━ [05] ALIGNMENT, SAFETY & GOVERNANCE
+### ┣━━ [04] ALIGNMENT, SAFETY & GOVERNANCE
 
 > Ensuring conversational agents remain helpful, harmless, honest.
 
@@ -157,26 +219,26 @@ STATUS:   Safety mechanisms under review
 ```
 
 **Featured Papers:**
-- `Human Society-Inspired Security: The 4C Framework` ─ arXiv:2502.00647
-- `Agentic AI for Cyber Resilience` ─ arXiv:2412.17298
-- `From Competition to Coordination` ─ arXiv:2411.11411
+- `Who's in Charge? Disempowerment Patterns` ─ Anthropic, Jan 2026
+- `Empathy Modeling in Active Inference Agents` ─ arXiv:2502.01947
+- `ODAR: Principled Adaptive Routing` ─ arXiv:2502.07745
 
 ---
 
-### ┣━━ [06] ACTIVE INFERENCE & COGNITIVE ARCHITECTURES
+### ┣━━ [05] ACTIVE INFERENCE & COGNITIVE ARCHITECTURES
 
 > Free-energy minimization, predictive processing, embodied cognition.
 
 ```
-STATE:    NEW
-PAPERS:   3 indexed
+STATE:    ACTIVE
+PAPERS:   4 indexed
 STATUS:   Framework exploration
 ```
 
 **Featured Papers:**
-- `Empathy Modeling in Active Inference Agents` ─ arXiv:2502.15589
-- `Active Digital Twins via Active Inference` ─ arXiv:2506.11388
-- `Orchestrator: Multi-Agent Active Inference` ─ arXiv:2509.05089
+- `Empathy Modeling in Active Inference Agents` ─ arXiv:2502.01947
+- `Resilient by Design: Active Inference` ─ arXiv:2511.10835
+- `ODAR: LLM Routing via Active Inference` ─ arXiv:2502.07745
 
 ---
 
@@ -184,11 +246,16 @@ STATUS:   Framework exploration
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  PAPER                          │  SOURCE      │  STATUS    │ INSIGHT   │
-├─────────────────────────────────┼──────────────┼────────────┼───────────┤
-│  Persona Selection Model         │  Anthropic   │  ✓ DONE    │ personify │
-│  The Assistant Axis             │  Anthropic   │  ✓ DONE    │ drift     │
-│  Measuring Agent Autonomy       │  Anthropic   │  ✓ DONE    │ overhang  │
+│  PAPER                              │  SOURCE      │  STATUS    │ INSIGHT   │
+├──────────────────────────────────────┼──────────────┼────────────┼───────────┤
+│  Persona Selection Model             │  Anthropic   │  ✓ DONE    │ personify │
+│  The Assistant Axis                  │  Anthropic   │  ✓ DONE    │ drift     │
+│  Measuring Agent Autonomy            │  Anthropic   │  ✓ DONE    │ overhang  │
+│  VoxRole Speech Role-Playing         │  arXiv       │  ✓ DONE    │ voice     │
+│  Disempowerment Patterns              │  Anthropic   │  ✓ DONE    │ safety    │
+│  MemGuide Multi-Session              │  arXiv       │  ✓ DONE    │ memory    │
+│  AdaMARP Immersive Role-Play         │  arXiv       │  ✓ DONE    │ rgp       │
+│  ... and 22 more                     │              │            │           │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -204,7 +271,7 @@ STATUS:   Framework exploration
 │  03-04 │  Personality in LLMs                             │
 │  05-06 │  Agentic Behavior & Autonomy                     │
 │  07-08 │  Multi-Agent Conversational Dynamics              │
-│  09-10 │  State of the Art Review                         │
+│  09-10 │  Psychodrama Facilitation with AI                 │
 │  11-12 │  Applied Research Project                        │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -222,7 +289,7 @@ See [`papers/resources.md`](papers/resources.md) for:
 │  • Research labs (Anthropic, OpenAI, DeepMind, Meta)       │
 │  • ArXiv search queries                                     │
 │  • Benchmarks & datasets                                   │
-│  • Key conferences (NeurIPS, ICML, ACL, etc.)               │
+│  • Key conferences (NeurIPS, ICML, ACL, DAFx, etc.)         │
 │  • Agent frameworks & interpretability tools               │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -237,9 +304,14 @@ See [`papers/resources.md`](papers/resources.md) for:
 │  OurBrood is an initiative of OMSK Social Club exploring the       │
 │  intersection of AI systems and social dynamics.                    │
 │                                                                     │
-│  This research repository supports the development of educational   │
-│  content and practical applications.                               │
+│  AI Architecture by SEMILLA.AI Studio (Moisés Horta)               │
+│  ─────────────────────────────────────────────────────────────────  │
 │                                                                     │
+│  mother.py ─ Guardian/facilitator (psychodrama sessions)           │
+│  brood.py  ─ Wake-word activated audience agent (stateless)        │
+│                                                                     │
+│  Commissioned by ArkDes and Nieuwe Instituut                       │
+│  Presented at ArkDes, Stockholm 2025                               │
 │  ─────────────────────────────────────────────────────────────────  │
 │                                                                     │
 │  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │
