@@ -663,6 +663,39 @@ A curated list of research papers for the OurBrood course.
   - How does active inference scale to multi-agent systems?
   - What coordination emerges through shared free-energy minimization?
 
+### 42. ODAR: Principled Adaptive Routing for LLM Reasoning via Active Inference
+- **Authors:** Siyuan Ma, Bo Gao, Xiaojun Jia, Simeng Qin, Tianlin Li, Ke Ma, Xiaoshuang Jia, Wenqi Ren, Yang Liu
+- **Link:** https://arxiv.org/abs/2502.07745
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Summary:** [odar-active-inference-llm-routing.md](./odar-active-inference-llm-routing.md)
+- **Key Questions:**
+  - How does active inference provide principled resource allocation for LLM routing?
+  - What is the accuracy-efficiency trade-off in adaptive routing?
+  - Can difficulty estimation be calibrated for novel task distributions?
+
+### 43. Resilient by Design: Active Inference for Distributed Continuum Intelligence
+- **Authors:** Praveen Kumar Donta, Alfreds Lapkovskis, Enzo Mingozzi, Schahram Dustdar
+- **Link:** https://arxiv.org/abs/2511.10835
+- **Submitted:** Nov 2025
+- **Status:** To review
+- **Summary:** [resilient-design-active-inference.md](./resilient-design-active-inference.md)
+- **Key Questions:**
+  - How does distributed active inference enable self-organization in computing systems?
+  - What role does resilience play in distributed AI architectures?
+  - How can active inference support edge-cloud continuum coordination?
+
+### 44. Empathy Modeling in Active Inference Agents for Perspective-Taking and Alignment
+- **Authors:** Albarracin Mahault, Mikeda Anna, Jimenez Rodriguez Alejandro, Namjoshi Sanjeev, Sakthivadivel Dalton, Pae Hongju, Shah Harshil, Wilson Philip
+- **Link:** https://arxiv.org/abs/2502.01947
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Summary:** [empathy-modeling-active-inference.md](./empathy-modeling-active-inference.md)
+- **Key Questions:**
+  - How does empathy as inference enable perspective-taking in agents?
+  - Can computational empathy improve alignment with human preferences?
+  - What is the relationship between nested inference and alignment?
+
 ---
 
 ## Priority 8: LLM Reasoning & Planning (To Review)
