@@ -601,6 +601,37 @@ A curated list of research papers for the OurBrood course.
   - What failure modes exist in language model behavior?
   - How do behavioral attraction basins affect safety?
 
+### 39. Unintended Misalignment from Agentic Fine-Tuning: Risks and Mitigation
+- **Authors:** Dongyoon Hahm, Taywon Min, Woogyeol Jin, Kimin Lee
+- **Link:** https://arxiv.org/abs/2508.11952
+- **Submitted:** Aug 2025
+- **Status:** To review
+- **Summary:** [unintended-misalignment-agentic-finetuning.md](./unintended-misalignment-agentic-finetuning.md)
+- **Key Questions:**
+  - How does agentic fine-tuning introduce unintended misalignment?
+  - What mitigation strategies preserve alignment during capability acquisition?
+  - Can active inference frameworks balance capability and safety?
+
+### 40. Military AI Cyber Agents (MAICAs) Constitute a Global Threat to Critical Infrastructure
+- **Authors:** Timothy Dubber, Seth Lazar
+- **Link:** https://arxiv.org/abs/2506.14000
+- **Submitted:** Jun 2025
+- **Status:** To review
+- **Key Questions:**
+  - What threats do autonomous AI cyber agents pose to critical infrastructure?
+  - How should governance address military AI cyber capabilities?
+  - What defensive measures are needed against MAICAs?
+
+### 41. Moral Anchor System: A Predictive Framework for AI Value Alignment and Drift Prevention
+- **Authors:** Various
+- **Link:** https://arxiv.org/abs/2510.03250
+- **Submitted:** Oct 2025
+- **Status:** To review
+- **Key Questions:**
+  - How can we detect, predict, and mitigate value drift in AI systems?
+  - What mechanisms anchor AI values to human ethics?
+  - How does the framework handle evolving contexts and learning dynamics?
+
 ---
 
 ## Priority 7: Active Inference & Cognitive Architectures (To Review)
