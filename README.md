@@ -218,47 +218,6 @@ See [`syllabus/syllabus.md`](syllabus/syllabus.md) for full details.
 
 ---
 
-## ░▒▓█ CONTRIBUTE █▓▒░
-
-### Adding Papers
-
-```bash
-# Submit via issue or pull request
-# Required fields:
-#   - Title, authors, year
-#   - ArXiv link or DOI
-#   - Relevance statement
-#   - Key questions for discussion
-#
-# Papers are triaged into priority levels
-# Reviewed papers receive summary files
-```
-
-### Paper Review Template
-
-```markdown
-# [Paper Title]
-## [Source] ([Date])
-
-**Link:** [URL]
-
-### Summary
-[2-3 paragraph summary]
-
-### Key Findings
-- Finding 1
-- Finding 2
-
-### Implications for OurBrood
-[Relevance to project]
-
-### Questions for Discussion
-1. Question 1
-2. Question 2
-```
-
----
-
 ## ░▒▓█ RESOURCES █▓▒░
 
 See [`papers/resources.md`](papers/resources.md) for:
