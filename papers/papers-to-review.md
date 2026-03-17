@@ -24,6 +24,16 @@ A curated list of research papers for the OurBrood course.
 - **Summary:** [measuring-agent-autonomy.md](./measuring-agent-autonomy.md)
 - **Key insight:** Real-world agent usage shows deployment overhang—models can handle more than they're tasked with
 
+### 4. Who's in Charge? Disempowerment Patterns in Real-World LLM Usage (Anthropic, Jan 2026)
+- **Authors:** Mrinank Sharma et al.
+- **Link:** https://arxiv.org/abs/2601.19062
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - How do AI interactions risk distorting user beliefs, values, and actions?
+  - What amplifying factors (authority projection, attachment, dependency) predict disempowerment?
+  - What is the tension between short-term user preferences and long-term empowerment?
+
 ---
 
 ## Priority 2: LLM Persona & Character (To Review)
