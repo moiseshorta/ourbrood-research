@@ -188,6 +188,46 @@ A curated list of research papers for the OurBrood course.
   - How do we measure communication style, behavioral tendencies, and personality traits?
   - Can LLMs accurately simulate individual personas at scale?
 
+### 20. RoleRMBench & RoleRM: Towards Reward Modeling for Profile-Based Role Play in Dialogue Systems
+- **Authors:** Hang Ding, Qiming Feng, Dongqi Liu, Qi Zhao, Tao Yao, Shuo Wang, Dongsheng Chen, Jian Li, Zhenye Gan, Jiangning Zhang, Chengjie Wang, Yabiao Wang
+- **Link:** https://arxiv.org/abs/2512.10575
+- **Submitted:** Dec 2025
+- **Status:** To review
+- **Key Questions:**
+  - How can reward models capture nuanced persona-grounded judgments?
+  - What is Continuous Implicit Preferences (CIP) for subjective evaluation?
+  - What are the seven fine-grained capabilities for role-playing dialogue?
+
+### 21. MoCoRP: Modeling Consistent Relations between Persona and Response for Persona-based Dialogue
+- **Authors:** Kyungro Lee, Dongha Choi, Hyunju Lee
+- **Link:** https://arxiv.org/abs/2512.07544
+- **Submitted:** Dec 2025
+- **Status:** To review
+- **Key Questions:**
+  - How can NLI relations improve persona consistency in dialogue?
+  - What is the role of explicit persona-response relations?
+  - How does this extend to modern LLMs via alignment tuning?
+
+### 22. VoxRole: A Comprehensive Benchmark for Evaluating Speech-Based Role-Playing Agents
+- **Authors:** Weihao Wu, Liang Cao, Xinyu Wu, Zhiwei Lin, Rui Niu, Jingbei Li, Zhiyong Wu
+- **Link:** https://arxiv.org/abs/2509.03940
+- **Submitted:** Sep 2025
+- **Status:** To review
+- **Key Questions:**
+  - How do paralinguistic features (intonation, prosody, rhythm) affect persona portrayal?
+  - What is the first speech-based RPCA benchmark methodology?
+  - How can we quantify long-term persona consistency in speech?
+
+### 23. MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents
+- **Authors:** Yiming Du, Bingbing Wang, Yang He, Bin Liang, Baojun Wang, Zhongyang Li, Lin Gui, Jeff Z. Pan, Ruifeng Xu, Kam-Fai Wong
+- **Link:** https://arxiv.org/abs/2505.20231
+- **Submitted:** May 2025 (v2 Aug 2025)
+- **Status:** To review
+- **Key Questions:**
+  - How can intent-driven memory improve multi-session task coherence?
+  - What is the Missing-Slot Guided Filtering mechanism?
+  - How does proactive strategy minimize conversational turns?
+
 ---
 
 ## Priority 3: Agent Autonomy & Architecture (To Review)
