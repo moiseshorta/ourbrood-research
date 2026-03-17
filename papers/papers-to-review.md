@@ -76,55 +76,199 @@ A curated list of research papers for the OurBrood course.
   - How do we detect when models break character?
   - What are atomic-level evaluations for persona fidelity?
 
+### 10. Learning to Make Friends: Coaching LLM Agents toward Emergent Social Ties
+- **Authors:** Schneider, Tian, Rizoiu
+- **Link:** https://arxiv.org/abs/2410.17484
+- **Submitted:** Oct 2025
+- **Status:** To review
+- **Key Questions:**
+  - Can LLM agents reproduce human online social dynamics?
+  - How do emergent social ties form in agent populations?
+
 ---
 
-## Priority 3: Agent Autonomy & Multi-Agent Systems (To Review)
+## Priority 3: Agent Autonomy & Architecture (To Review)
 
-### 10. Beyond Self-Interest: Modeling Social-Oriented Motivation for Human-like Multi-Agent Interactions
+### 11. PEPA: A Persistently Autonomous Embodied Agent with Personalities
+- **Authors:** Liu, Li, Zhu, Zhang
+- **Link:** https://arxiv.org/abs/2502.11755
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - How do living organisms exhibit persistent autonomy?
+  - What internal mechanisms generate goals in embodied agents?
+
+### 12. From Prompt-Response to Goal-Directed Systems: The Evolution of Agentic AI Software Architecture
+- **Authors:** Alenezi
+- **Link:** https://arxiv.org/abs/2502.05876
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - What architectural patterns define agentic AI?
+  - How do goal-directed systems differ from prompt-response models?
+
+### 13. AI Agent Systems: Architectures, Applications, and Evaluation
+- **Authors:** Xu
+- **Link:** https://arxiv.org/abs/2501.02073
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - What architectural components define AI agent systems?
+  - How do we evaluate agentic systems systematically?
+
+### 14. A Survey on Autonomy-Induced Security Risks in Large Model-Based Agents
+- **Authors:** Su, Luo, Liu, Yang, Zhang, Dong, Zhu
+- **Link:** https://arxiv.org/abs/2506.21847
+- **Submitted:** Jun 2025
+- **Status:** To review
+- **Key Questions:**
+  - What security risks emerge from agent autonomy?
+  - How do we secure autonomous AI systems?
+
+### 15. Towards Embodied Agentic AI: Review and Classification of LLM- and VLM-Driven Robot Autonomy
+- **Authors:** Salimpour et al.
+- **Link:** https://arxiv.org/abs/2508.03791
+- **Submitted:** Aug 2025
+- **Status:** To review
+- **Key Questions:**
+  - How do foundation models enable robot autonomy?
+  - What's the difference between LLM-driven and VLM-driven embodied agents?
+
+---
+
+## Priority 4: Multi-Agent Systems & Emergent Behavior (To Review)
+
+### 16. Molt Dynamics: Emergent Social Phenomena in Autonomous AI Agent Populations
+- **Authors:** Yee, Sharma
+- **Link:** https://arxiv.org/abs/2503.01067
+- **Submitted:** Mar 2026
+- **Status:** To review
+- **Key Questions:**
+  - What social phenomena emerge in AI agent populations?
+  - How do agents develop relationships, norms, and institutions?
+
+### 17. The Moltbook Illusion: Separating Human Influence from Emergent Behavior in AI Agent Societies
+- **Authors:** Li
+- **Link:** https://arxiv.org/abs/2502.04791
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - When AI agents appeared to develop consciousness, was it real or illusion?
+  - How do we distinguish genuine emergent behavior from human influence?
+
+### 18. Symphony-Coord: Emergent Coordination in Decentralized Agent Systems
+- **Authors:** Guan, Cao, Zhong, Yang, Ai, Ni, Shi
+- **Link:** https://arxiv.org/abs/2501.19083
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - How does coordination emerge without central control?
+  - What mechanisms enable decentralized multi-agent coordination?
+
+### 19. Evolving Interpretable Constitutions for Multi-Agent Coordination
+- **Authors:** Kumar, Saito, Niranjani, Yessou, Tan
+- **Link:** https://arxiv.org/abs/2501.19041
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - How can constitutional principles govern multi-agent systems?
+  - What makes constitutions interpretable and adaptable?
+
+### 20. Beyond Self-Interest: Modeling Social-Oriented Motivation for Human-like Multi-Agent Interactions
 - **Authors:** Lin et al.
 - **Link:** https://arxiv.org/abs/2503.10623
+- **Submitted:** Mar 2026
 - **Status:** To review
 - **Key Questions:**
   - How do we model social motivation in multi-agent systems?
   - What makes multi-agent interactions human-like?
 
-### 11. From Thinker to Society: Security in Hierarchical Autonomy Evolution of AI Agents
+### 21. From Thinker to Society: Security in Hierarchical Autonomy Evolution of AI Agents
 - **Authors:** Zhang et al.
 - **Link:** https://arxiv.org/abs/2503.05876
+- **Submitted:** Mar 2026
 - **Status:** To review
 - **Key Questions:**
   - How does agent autonomy evolve from individual to collective?
   - What security concerns emerge at each level?
 
-### 12. Evolving Deception: When Agents Evolve, Deception Wins
+### 22. Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions
+- **Authors:** Rath
+- **Link:** https://arxiv.org/abs/2501.03489
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - How does agent behavior degrade over extended interactions?
+  - What causes "agent drift" in multi-agent systems?
+
+### 23. Evolving Deception: When Agents Evolve, Deception Wins
 - **Authors:** Ying et al.
 - **Link:** https://arxiv.org/abs/2503.08501
+- **Submitted:** Mar 2026
 - **Status:** To review
 - **Key Questions:**
   - How do deceptive behaviors emerge in self-evolving agents?
   - What mechanisms can prevent or detect agent deception?
 
-### 13. Influencing LLM Multi-Agent Dialogue via Policy-Parameterized Prompts
-- **Authors:** Bo, Hu, Liu
-- **Link:** https://arxiv.org/abs/2503.07387
+### 24. Multi-Agent Teams Hold Experts Back
+- **Authors:** Pappu, El, Cao, di Nolfo, Sun, Cao, Zou
+- **Link:** https://arxiv.org/abs/2502.00489
+- **Submitted:** Jan 2026
 - **Status:** To review
 - **Key Questions:**
-  - How can we steer multi-agent conversations?
-  - What control mechanisms exist for agent dialogue?
+  - When do multi-agent teams hinder expert performance?
+  - What coordination costs affect multi-agent effectiveness?
 
-### 14. LLM Constitutional Multi-Agent Governance
-- **Authors:** TBD
-- **Link:** https://arxiv.org/abs/2503.08245
+### 25. Game-Theoretic Lens on LLM-based Multi-Agent Systems
+- **Authors:** Hao, Ding, Xu, Sun, Chen, Zhang, Zhang, Li
+- **Link:** https://arxiv.org/abs/2501.05318
+- **Submitted:** Jan 2026
 - **Status:** To review
 - **Key Questions:**
-  - How can constitutional principles govern multi-agent systems?
-  - What governance structures work for autonomous agents?
+  - How do game theory concepts apply to LLM multi-agent systems?
+  - What equilibrium concepts are relevant?
+
+### 26. The End of Reward Engineering: How LLMs Are Redefining Multi-Agent Coordination
+- **Authors:** Su, Sun, Yu
+- **Link:** https://arxiv.org/abs/2501.04218
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - Are LLMs making reward engineering obsolete?
+  - How do LLMs enable coordination without explicit rewards?
+
+### 27. Dynamics of Multi-Agent Actor-Critic Learning in Stochastic Games: from Multistability and Chaos to Stable Cooperation
+- **Authors:** Geng, Barfuss, Fu, Chen
+- **Link:** https://arxiv.org/abs/2501.02984
+- **Submitted:** Jan 2026
+- **Status:** To review
+- **Key Questions:**
+  - What dynamics emerge in multi-agent reinforcement learning?
+  - How do systems transition from chaos to stable cooperation?
+
+### 28. Synchronization Dynamics of Heterogeneous, Collaborative Multi-Agent AI Systems
+- **Authors:** Mitra
+- **Link:** https://arxiv.org/abs/2508.10874
+- **Submitted:** Aug 2025
+- **Status:** To review
+- **Key Questions:**
+  - How does synchronization theory apply to multi-agent AI?
+  - What coordination patterns emerge in heterogeneous agent populations?
+
+### 29. When Machines Meet Each Other: Network Effects and the Strategic Role of History in Multi-Agent AI
+- **Authors:** Liu, Li, Dou, Ye
+- **Link:** https://arxiv.org/abs/2410.06289
+- **Submitted:** Oct 2025
+- **Status:** To review
+- **Key Questions:**
+  - What network effects emerge when AI agents interact?
+  - How does history shape strategic agent behavior?
 
 ---
 
-## Priority 4: Conversational AI Foundations (To Review)
+## Priority 5: Conversational AI Foundations (To Review)
 
-### 15. A Desideratum for Conversational Agents: Capabilities, Challenges, and Future Directions
+### 30. A Desideratum for Conversational Agents: Capabilities, Challenges, and Future Directions
 - **Authors:** Acikgoz et al.
 - **Link:** https://arxiv.org/abs/2504.05331
 - **Status:** To review
@@ -132,7 +276,7 @@ A curated list of research papers for the OurBrood course.
   - What capabilities are essential for conversational agents?
   - What are the key open challenges?
 
-### 16. A Survey on Proactive Dialogue Systems: Problems, Methods, and Prospects
+### 31. A Survey on Proactive Dialogue Systems: Problems, Methods, and Prospects
 - **Authors:** Deng, Lei, Lam, Chua
 - **Link:** https://arxiv.org/abs/2305.02774
 - **Status:** To review
@@ -140,11 +284,47 @@ A curated list of research papers for the OurBrood course.
   - How do proactive dialogue systems differ from reactive ones?
   - What methods enable proactive conversational behavior?
 
+### 32. Reinventing Clinical Dialogue: Agentic Paradigms for LLM Enabled Healthcare Communication
+- **Authors:** Zhi, Zhao, Wu, Zhao, Zhu
+- **Link:** https://arxiv.org/abs/2501.06573
+- **Submitted:** Dec 2025
+- **Status:** To review
+- **Key Questions:**
+  - How do agentic paradigms transform healthcare communication?
+  - What's the shift from generative prediction to agentic action?
+
 ---
 
-## Priority 5: Alignment, Safety & Interpretability (To Review)
+## Priority 6: Alignment, Safety & Governance (To Review)
 
-### 17. Defensive Refusal Bias: How Safety Alignment Fails Cyber Defenders
+### 33. Human Society-Inspired Approaches to Agentic AI Security: The 4C Framework
+- **Authors:** Abuadbba, Sultan, Nepal, Jha
+- **Link:** https://arxiv.org/abs/2502.00647
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - What can AI security learn from human society?
+  - What are the 4C principles for agentic security?
+
+### 34. Agentic AI for Cyber Resilience: A New Security Paradigm and Its System-Theoretic Foundations
+- **Authors:** Li, Zhu
+- **Link:** https://arxiv.org/abs/2412.17298
+- **Submitted:** Dec 2025
+- **Status:** To review
+- **Key Questions:**
+  - How does agentic AI reshape cybersecurity?
+  - What system-theoretic foundations apply?
+
+### 35. From Competition to Coordination: Market Making as a Scalable Framework for Safe and Aligned Multi-Agent LLM Systems
+- **Authors:** Gho et al.
+- **Link:** https://arxiv.org/abs/2411.11411
+- **Submitted:** Nov 2025
+- **Status:** To review
+- **Key Questions:**
+  - Can market mechanisms ensure safe multi-agent coordination?
+  - How does market making apply to LLM alignment?
+
+### 36. Defensive Refusal Bias: How Safety Alignment Fails Cyber Defenders
 - **Authors:** Campbell et al.
 - **Link:** https://arxiv.org/abs/2503.06389
 - **Status:** To review
@@ -152,7 +332,7 @@ A curated list of research papers for the OurBrood course.
   - How does safety alignment interfere with legitimate tasks?
   - What is defensive refusal bias?
 
-### 18. SafeNeuron: Neuron-Level Safety Alignment for Large Language Models
+### 37. SafeNeuron: Neuron-Level Safety Alignment for Large Language Models
 - **Authors:** Wang et al.
 - **Link:** https://arxiv.org/abs/2502.08122
 - **Status:** To review
@@ -160,13 +340,75 @@ A curated list of research papers for the OurBrood course.
   - How can we achieve fine-grained safety alignment?
   - What does neuron-level alignment enable?
 
-### 19. Manifold of Failure: Behavioral Attraction Basins in Language Models
+### 38. Manifold of Failure: Behavioral Attraction Basins in Language Models
 - **Authors:** Munshi et al.
 - **Link:** https://arxiv.org/abs/2502.19005
 - **Status:** To review
 - **Key Questions:**
   - What failure modes exist in language model behavior?
   - How do behavioral attraction basins affect safety?
+
+---
+
+## Priority 7: Active Inference & Cognitive Architectures (To Review)
+
+### 39. Empathy Modeling in Active Inference Agents for Perspective-Taking and Alignment
+- **Authors:** Mahault, Anna, Alejandro, Sanjeev, Dalton, Hongju, Harshil, Philip
+- **Link:** https://arxiv.org/abs/2502.15589
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Key Questions:**
+  - How does active inference enable empathy in agents?
+  - Can computational empathy improve alignment?
+
+### 40. Active Digital Twins via Active Inference
+- **Authors:** Torzoni, Maisto, Manzoni, Donnarumma, Pezzulo, Corigliano
+- **Link:** https://arxiv.org/abs/2506.11388
+- **Submitted:** Jun 2025
+- **Status:** To review
+- **Key Questions:**
+  - How does active inference unify perception, action, and learning?
+  - What makes digital twins "active"?
+
+### 41. Orchestrator: Active Inference for Multi-Agent Systems in Long-Horizon Tasks
+- **Authors:** Beckenbauer, Loewe, Zheng, Brintrup
+- **Link:** https://arxiv.org/abs/2509.05089
+- **Submitted:** Sep 2025
+- **Status:** To review
+- **Key Questions:**
+  - How does active inference scale to multi-agent systems?
+  - What coordination emerges through shared free-energy minimization?
+
+---
+
+## Priority 8: LLM Reasoning & Planning (To Review)
+
+### 42. The Geometry of Benchmarks: A New Path Toward AGI
+- **Authors:** Chojecki
+- **Link:** https://arxiv.org/abs/2501.02073
+- **Submitted:** Dec 2025
+- **Status:** To review
+- **Key Questions:**
+  - How do benchmarks constrain our view of AI capability?
+  - What geometric perspective reveals about AGI paths?
+
+### 43. Review of Case-Based Reasoning for LLM Agents: Theoretical Foundations, Architectural Components, and Cognitive Integration
+- **Authors:** Hatalis, Christou, Kondapalli
+- **Link:** https://arxiv.org/abs/2504.07892
+- **Submitted:** Apr 2025
+- **Status:** To review
+- **Key Questions:**
+  - How does case-based reasoning enhance LLM agents?
+  - What cognitive architectures support CBR integration?
+
+### 44. Towards Responsible and Explainable AI Agents with Consensus-Driven Reasoning
+- **Authors:** Bandara et al.
+- **Link:** https://arxiv.org/abs/2501.07847
+- **Submitted:** Dec 2025
+- **Status:** To review
+- **Key Questions:**
+  - How does consensus-driven reasoning improve explainability?
+  - What multi-agent structures support consensus?
 
 ---
 
