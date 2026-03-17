@@ -4,6 +4,99 @@ A curated list of research papers for the OurBrood course.
 
 ---
 
+## Priority 0: Voice Agents & Memory Architecture (OurBrood Core)
+
+### 1. τ-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains
+- **Authors:** Soham Ray, Keshav Dhandhania, Victor Barres, Karthik Narasimhan
+- **Link:** https://arxiv.org/abs/2603.08723
+- **Submitted:** Mar 2026
+- **Status:** ✅ Reviewed
+- **Summary:** [tau-voice-full-duplex.md](./tau-voice-full-duplex.md)
+- **Relevance to OurBrood:** Full-duplex voice architecture directly informs Mother/Brood's simultaneous listening/speaking capabilities
+- **Key Questions:**
+  - What latency budgets apply to full-duplex psychodrama facilitation?
+  - How should Mother handle interruptions during long-form sessions?
+  - What evaluation metrics from τ-Voice apply to OurBrood?
+
+### 2. VoiceAgentRAG: Solving the RAG Latency Bottleneck in Real-Time Voice Agents
+- **Authors:** Jielin Qiu, Jianguo Zhang, et al.
+- **Link:** https://arxiv.org/abs/2603.08723
+- **Submitted:** Mar 2026
+- **Status:** ✅ Reviewed
+- **Summary:** [voice-agent-rag-latency.md](./voice-agent-rag-latency.md)
+- **Relevance to OurBrood:** Dual-agent Fast/Slow Thinker pattern mirrors Mother (persistent, KB) vs. Brood (stateless, fast) architecture
+- **Key Questions:**
+  - How to implement async memory retrieval without blocking TTS?
+  - What memory routing strategies minimize latency for real-time psychodrama?
+
+### 3. HiMem: Hierarchical Long-Term Memory for LLM Long-Horizon Agents
+- **Authors:** Ningning Zhang, Xingxing Yang, Zhizhong Tan, Weiping Deng, Wenyong Wang
+- **Link:** https://arxiv.org/abs/2501.09123
+- **Submitted:** Jan 2026
+- **Status:** ✅ Reviewed
+- **Summary:** [himem-hierarchical-memory.md](./himem-hierarchical-memory.md)
+- **Relevance to OurBrood:** Hierarchical memory structure (episodic/semantic/procedural) provides framework for Mother's persistent memory
+- **Key Questions:**
+  - When should episodic memories be promoted to semantic?
+  - How does hierarchical memory integrate with KB sync?
+
+### 4. MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents
+- **Authors:** Yiming Du, Bingbing Wang, et al.
+- **Link:** https://arxiv.org/abs/2505.20231
+- **Submitted:** May 2025 (v2 Aug 2025)
+- **Status:** ✅ Reviewed
+- **Summary:** [memguide-memory-selection.md](./memguide-memory-selection.md)
+- **Relevance to OurBrood:** Intent-driven memory retrieval aligns with Mother's psychodrama facilitation goals
+- **Key Questions:**
+  - What intent taxonomy applies to psychodrama facilitation?
+  - How to design information slots for visitor journey mapping?
+
+### 5. VoxRole: A Comprehensive Benchmark for Evaluating Speech-Based Role-Playing Agents
+- **Authors:** Weihao Wu, Liang Cao, et al.
+- **Link:** https://arxiv.org/abs/2509.03940
+- **Submitted:** Sep 2025
+- **Status:** ✅ Reviewed
+- **Summary:** [voxrole-speech-roleplaying.md](./voxrole-speech-roleplaying.md)
+- **Relevance to OurBrood:** Paralinguistic evaluation for voice-based role-play; both Mother and Brood must embody personas through speech
+- **Key Questions:**
+  - How to store paralinguistic cues alongside text memories?
+  - What voice characteristics define Mother's facilitator persona?
+
+### 6. LTS-VoiceAgent: Listen-Think-Speak Framework for Streaming Voice Interaction
+- **Authors:** Wenhao Zou, Yuwei Miao, et al.
+- **Link:** https://arxiv.org/abs/2501.07895
+- **Submitted:** Jan 2026
+- **Status:** ✅ Reviewed
+- **Summary:** [lts-voice-agent-listen-think-speak.md](./lts-voice-agent-listen-think-speak.md)
+- **Relevance to OurBrood:** Semantic triggering and incremental reasoning directly applicable to Brood's wake-word system and Mother's real-time responses
+- **Key Questions:**
+  - What semantic patterns should trigger Brood beyond wake-word?
+  - When should Mother use incremental vs. complete reasoning?
+
+### 7. Towards Autonomous Memory Agents
+- **Authors:** Xinle Wu, Rui Zhang, Mustafa Anis Hussain, Yao Lu
+- **Link:** https://arxiv.org/abs/2502.11309
+- **Submitted:** Feb 2026
+- **Status:** ✅ Reviewed
+- **Summary:** [autonomous-memory-agents.md](./autonomous-memory-agents.md)
+- **Relevance to OurBrood:** Autonomous memory decisions critical for Mother's self-sustaining memory without explicit user commands
+- **Key Questions:**
+  - How autonomous should Mother's memory decisions be?
+  - What events trigger memory storage vs. discard?
+
+### 8. TiMem: Temporal-Hierarchical Memory Consolidation for Long-Horizon Conversational Agents
+- **Authors:** Kai Li, Xuanqing Yu, et al.
+- **Link:** https://arxiv.org/abs/2501.11345
+- **Submitted:** Jan 2026
+- **Status:** ✅ Reviewed
+- **Summary:** [timem-temporal-memory.md](./timem-temporal-memory.md)
+- **Relevance to OurBrood:** Temporal organization of memories across exhibition sessions
+- **Key Questions:**
+  - How should Mother organize memories by time (per-session, per-visitor)?
+  - What are appropriate forgetting curves for exhibition contexts?
+
+---
+
 ## Priority 1: Core Readings (Reviewed)
 
 ### 1. The Persona Selection Model (Anthropic, Feb 2026)

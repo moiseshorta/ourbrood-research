@@ -168,4 +168,83 @@ Brood listens for "brood" activation:
 
 ---
 
+## Research Foundation
+
+This architecture is grounded in recent research on voice agents, memory systems, and conversational AI. The following papers directly inform OurBrood's design decisions.
+
+### Voice Agent Architecture
+
+**τ-Voice: Benchmarking Full-Duplex Voice Agents** (Ray et al., 2026)  
+Full-duplex voice agents that listen and speak simultaneously require careful evaluation of conversational dynamics. OurBrood's WebSocket streaming pipeline implements real-time bidirectional communication informed by τ-Voice's latency budgets and turn-taking metrics. The paper's focus on real-world domains (vs. synthetic benchmarks) aligns with OurBrood's museum exhibition context.
+
+**LTS-VoiceAgent: Listen-Think-Speak Framework** (Zou et al., 2026)  
+The Listen-Think-Speak pipeline with semantic triggering directly informs Brood's wake-word system. Rather than simple keyword matching, semantic triggering enables more sophisticated activation patterns. Mother's incremental reasoning during visitor speech draws on LTS-VoiceAgent's approach to streaming inference.
+
+**VoiceAgentRAG: Dual-Agent Architecture** (Qiu et al., 2026)  
+The Fast Thinker / Slow Thinker pattern mirrors OurBrood's Mother/Brood division. Brood operates as the Fast Thinker (immediate response, session-scoped) while Mother serves as the Slow Thinker (persistent memory, KB integration). The decoupling of retrieval from response generation addresses RAG latency in real-time voice contexts.
+
+### Memory Architecture
+
+**HiMem: Hierarchical Long-Term Memory** (Zhang et al., 2026)  
+Mother's memory system transitions from flat plaintext to hierarchical organization inspired by HiMem's three-layer structure:
+- **Episodic**: Recent session transcripts, active threads
+- **Semantic**: Derived patterns, visitor archetypes, Crave taxonomy  
+- **Procedural**: Facilitation techniques, intervention patterns
+
+This cognitive hierarchy supports both immediate retrieval (episodic) and long-term learning (semantic/procedural).
+
+**MemGuide: Intent-Driven Memory Selection** (Du et al., 2025)  
+Memory retrieval in Mother is intent-driven rather than purely semantic. MemGuide's two-stage framework (Intent-Aligned Retrieval + Missing-Slot Guided Filtering) applies to psychodrama facilitation:
+- **Intent Classification**: What is Mother trying to achieve? (deepen exploration, build rapport, identify Crave)
+- **Slot-Filling**: What visitor information is missing? (family context, transitions, core desires)
+
+The proactive strategy minimizes conversational turns by addressing information gaps directly.
+
+**TiMem: Temporal-Hierarchical Memory Consolidation** (Li et al., 2026)  
+Memory organization across exhibition hours requires temporal structure. TiMem's consolidation mechanisms inform Mother's 90s recap system—determining which episodic memories should be promoted to semantic storage and which should fade.
+
+**Towards Autonomous Memory Agents** (Wu et al., 2026)  
+Mother must autonomously decide what to remember without explicit visitor instruction. Autonomous memory decisions include:
+- Importance assessment of visitor statements
+- Proactive storage of psychodrama-relevant moments
+- Self-initiated consolidation during gaps
+
+### Speech-Based Role-Play
+
+**VoxRole: Speech-Based Role-Playing Benchmark** (Wu et al., 2025)  
+Voice agents require paralinguistic evaluation beyond text. VoxRole's metrics for persona fidelity through speech apply to Mother's facilitator persona:
+- **Intonation**: Pitch patterns conveying emotional state
+- **Prosody**: Rhythm and stress for question-asking vs. reflection
+- **Long-Term Consistency**: Maintaining persona across sessions
+
+Future work includes storing voice embeddings alongside text memories for consistent persona expression.
+
+### Architectural Implications
+
+```
+Research Paper                    → OurBrood Implementation
+───────────────────────────────────────────────────────────────
+τ-Voice full-duplex              → WebSocket bidirectional streaming
+LTS-VoiceAgent semantic trigger  → Brood wake-word + Mother context detection
+VoiceAgentRAG dual-agent         → Fast (Brood) / Slow (Mother) thinker pattern
+HiMem hierarchical memory        → Episodic/Semantic/Procedural layers
+MemGuide intent-driven           → Psychodrama intent classification
+TiMem temporal consolidation     → 90s recap → semantic promotion
+VoxRole speech role-play         → Voice persona consistency metrics
+```
+
+### Open Questions
+
+1. **Latency Budgets**: What are acceptable latencies for full-duplex psychodrama facilitation? (τ-Voice provides benchmark ranges)
+
+2. **Memory Hierarchy Depth**: How many layers should Mother's memory have? HiMem uses three; could more improve retrieval?
+
+3. **Intent Taxonomy**: What intents are most relevant to psychodrama facilitation? MemGuide uses task-oriented intents; OurBrood needs facilitation-specific taxonomy.
+
+4. **Paralinguistic Memory**: Should Mother store voice embeddings for persona consistency? VoxRole benchmarks speech-based role-play.
+
+5. **Autonomous Consolidation**: When should Mother autonomously promote episodic to semantic memory? TiMem provides temporal consolidation patterns.
+
+---
+
 *Documentation sourced from ourbrood_AIAgent_architecture.pdf (SEMILLA.AI Studio, 2025)*
