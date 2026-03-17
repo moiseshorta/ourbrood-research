@@ -4,14 +4,15 @@
 **Institution:** OMSK Social Club  
 **Course Type:** Research Seminar  
 **Project:** OurBrood  
+**Updated:** March 2026
 
 ---
 
 ## Course Description
 
-This course explores the State of the Art (SOTA) in Large Language Models (LLMs) and agentic conversational systems. Through the lens of the OurBrood project, students will examine how modern AI systems develop personality, exercise agency, and engage in complex multi-agent conversations.
+This course explores the State of the Art (SOTA) in Large Language Models (LLMs) and agentic conversational systems through the lens of the OurBrood project—an AI-facilitated psychodrama system with two agents: Mother.py (persistent facilitator) and Brood.py (wake-word activated audience capture).
 
-We will analyze foundational and cutting-edge research papers, conduct experiments with conversational agents, and develop frameworks for understanding AI personality and autonomy.
+Through systematic analysis of 24+ peer-reviewed papers, students will develop frameworks for understanding AI personality, memory architecture, voice agents, and multi-agent coordination in participatory art contexts.
 
 ---
 
@@ -19,17 +20,15 @@ We will analyze foundational and cutting-edge research papers, conduct experimen
 
 By the end of this course, students will be able to:
 
-1. **Analyze** the architecture of modern LLM conversational systems
-2. **Evaluate** research methodologies in AI personality and agentic behavior
-3. **Design** experiments to test conversational agent capabilities
-4. **Synthesize** insights from multiple research papers into coherent frameworks
-5. **Apply** theoretical knowledge to practical OurBrood system development
+1. **Analyze** voice agent architecture through the lens of real-time facilitation systems
+2. **Evaluate** memory systems for multi-session psychodrama continuity
+3. **Design** safety frameworks that prevent disempowerment in therapeutic contexts
+4. **Synthesize** active inference approaches to multi-agent coordination
+5. **Apply** theoretical knowledge to Mother.py and Brood.py implementation
 
 ---
 
-## Context: Participatory AI Art & Real Game Play
-
-*This section situates OurBrood within the broader context of participatory art, collective storytelling, and AI installations.*
+## Course Context
 
 ### Real Game Play (RGP) Methodology
 
@@ -48,172 +47,344 @@ Commissioned by ArkDes, presented at museums and galleries internationally.
 
 The intersection of AI agents, participatory art, and collective storytelling represents an emerging field with several key threads:
 
-#### 1. AI in Interactive Art Installations
+1. **AI in Interactive Art Installations** — Nieuwe Instituut, Ars Electronica, Transmediale
+2. **Collective Storytelling with AI Agents** — AdaMARP, Drama Machine, StoryComposerAI
+3. **Agency Distribution in Human-AI Co-Creation** — Sovereignty vs. entanglement frameworks
+4. **Embodied vs. Screen-Based Participation** — Beyond text interfaces
+5. **Ethics of AI-Guided Self-Exploration** — Psychological safety, power dynamics
 
-- **Nieuwe Instituut (Rotterdam)** — Pioneer in AI/digital culture exhibitions
-- **Ars Electronica (Linz)** — Annual festival featuring AI art installations since 1979
-- **Transmediale (Berlin)** — Critical perspectives on technology and participatory practices
-- **SIGGRAPH Art Gallery** — Computational art and interactive installations
+---
 
-Key papers:
-- *The Dream Within Huang Long Cave* — AI-driven interactive narrative for family storytelling
-- *'Studies for'* — Human-AI co-creative sound art with real-time generation
+## Architecture Overview
 
-#### 2. Collective Storytelling with AI Agents
-
-Research addresses how multiple AI agents can support collaborative narrative creation:
-
-- **AdaMARP** — Adaptive multi-agent framework for immersive role-play
-- **The Drama Machine** — Multi-agent character simulation with dramatic coordination
-- **StoryComposerAI** — Decomposition and linking for human-AI story co-creation
-
-Key questions:
-- How do AI agents coordinate narrative without dominating?
-- What balance between structure and emergence supports meaningful stories?
-- How can AI augment (not replace) human creative agency?
-
-#### 3. Agency Distribution in Human-AI Co-Creation
-
-Critical perspectives on power and sovereignty in collaborative systems:
-
-- **Sovereignty vs. Entanglement** — Who holds power in human-AI creative partnerships?
-- **Facilitator vs. Generator** — AI as guide/support vs. AI as content producer
-- **Decolonial perspectives** — Questioning Western assumptions about AI creativity
-
-Key paper: *"When Strings Tug at Algorithm"* — Human-AI sovereignty in nomadic improvisational music
-
-#### 4. Embodied vs. Screen-Based Participation
-
-Moving beyond text interfaces to sensory/embodied engagement:
-
-- **Body prompting** — Gesture and movement as AI interaction
-- **Sound co-creation** — Real-time multi-channel audio generation
-- **Installation contexts** — Museum/gallery spaces for collective experience
-
-RGP's high-intensity 3-hour sessions exemplify embodied participatory methodology.
-
-#### 5. Ethics of AI-Guided Self-Exploration
-
-Critical considerations for transformative experiences:
-
-- **Psychological safety** — How do AI facilitators handle vulnerability?
-- **Transformation vs. entertainment** — What makes experiences meaningful?
-- **Power dynamics** — Who controls the narrative direction?
-- **Consent and transparency** — What should participants know about AI involvement?
-
-### Key Research Gaps for OurBrood
-
-1. **Longitudinal participatory experiences** — Most research focuses on single sessions; RGP's multi-session format is underexplored
-
-2. **Collective improvisation dynamics** — Many papers focus on individual-AI interaction; group dynamics with AI facilitation need study
-
-3. **Ethics frameworks** — Limited research on psychological safety in AI-guided self-exploration
-
-4. **Museum/gallery deployment** — Technical papers often lack real-world audience study data
-
-### Recommended Venues for Further Research
-
-- ACM CHI Conference on Human Factors in Computing Systems
-- ACM Creativity and Cognition (C&C)
-- AAAI/IJCAI AI and Interactive Digital Entertainment (AIIDE)
-- NeurIPS Creative AI Workshop
-- Ars Electronica Archive
-- Transmediale Proceedings
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                        OURBROOD ARCHITECTURE                         │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│   ┌────────────────────┐          ┌────────────────────┐            │
+│   │      MOTHER.PY      │          │      BROOD.PY       │            │
+│   │  ────────────────  │          │  ────────────────   │            │
+│   │  • Persistent       │          │  • Stateless        │            │
+│   │  • Facilitator      │          │  • Wake-word        │            │
+│   │  • Psychodrama      │          │  • Audience capture │            │
+│   │  • KB + Memory      │          │  • Fast response    │            │
+│   └────────┬───────────┘          └────────┬───────────┘            │
+│            │                              │                         │
+│            ▼                              ▼                         │
+│   ┌────────────────────────────────────────────────────────────┐   │
+│   │                    VOICE PIPELINE                           │   │
+│   │  MIC → RESAMPLE → WEBSOCKET → LLM → TTS → SPEAKER          │   │
+│   └────────────────────────────────────────────────────────────┘   │
+│                                                                      │
+└─────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## Course Structure
 
 ### Module 1: Foundations of LLM Conversations (Weeks 1-2)
-- History of conversational AI
-- Transformer architecture fundamentals
-- Language model training paradigms
-- Prompt engineering basics
 
-### Module 2: Personality in LLMs (Weeks 3-4)
-- Anthropic's research on LLM personality types
-- Character consistency in conversational systems
-- Persona engineering and system prompts
-- Measuring personality expression
+**Papers:**
+- The Persona Selection Model (Anthropic, Feb 2026)
+- The Assistant Axis (Anthropic, Jan 2026)
 
-### Module 3: Agentic Behavior & Autonomy (Weeks 5-6)
-- What makes an agent agentic?
-- Goal-directed vs. instruction-following systems
-- Tool use and function calling
-- Autonomy spectra in AI systems
+**Key Concepts:**
+- LLMs enact personas learned during pretraining
+- Neural representations reveal persona space
+- Distance from "Assistant" predicts behavior
 
-### Module 4: Multi-Agent Conversational Dynamics (Weeks 7-8)
-- Agent-to-agent communication protocols
-- Emergent behaviors in multi-agent systems
-- Cooperation and competition dynamics
-- OurBrood's multi-agent architecture
-
-### Module 5: Psychodrama Facilitation with AI (Weeks 9-10)
-- **Voice-Based Role-Playing Agents**
-  - Paralinguistic features for persona expression
-  - Long-term persona consistency in speech
-  - Multi-dimensional character profiling
-  - *Core Reading:* VoxRole (arXiv:2509.03940)
-
-- **Facilitator vs. Character Personas**
-  - Distinction between playing characters and guiding experiences
-  - Safety considerations in AI-guided psychodrama
-  - Empathy and perspective-taking in facilitation
-  - *Core Reading:* Disempowerment Patterns (arXiv:2601.19062)
-
-- **Multi-Session Memory and Continuity**
-  - Intent-driven memory retrieval
-  - Maintaining facilitator persona across sessions
-  - Goal-oriented vs. exploration-oriented memory
-  - *Core Reading:* MemGuide (arXiv:2505.20231)
-
-- **Empathy Modeling in Active Inference Agents**
-  - Computational framework for perspective-taking
-  - Cognitive, affective, and behavioral empathy
-  - Alignment through nested inference
-  - *Core Reading:* Empathy Modeling in Active Inference Agents (arXiv:2502.15589)
-
-### Module 6: State of the Art Review (Weeks 11-12)
-- Recent advances in conversational AI (2023-2025)
-- Emerging research directions
-- Open problems and challenges
-- Student paper presentations
-
-### Module 7: Applied Research Project (Weeks 13-14)
-- Design and execute research experiment
-- Document findings
-- Present results
+**Practical Exercise:**
+Map Mother.py's facilitator persona on the Assistant Axis. Where does it sit? What conversational types trigger drift?
 
 ---
 
-## Required Readings
+### Module 2: Personality in LLMs (Weeks 3-4)
 
-### Core Papers
-1. Anthropic (2024). "LLMs and Personality Types"
-2. (To be added)
+**Papers:**
+- VoxRole: Speech-Based Role-Playing Agents (arXiv:2509.03940)
+- Persona Selection Model (Anthropic, Feb 2026)
+- Assistant Axis (Anthropic, Jan 2026)
 
-### Supplementary Materials
-- Course notes and slides (provided)
-- Selected blog posts and technical reports
+**Key Concepts:**
+- Paralinguistic features for persona expression
+- Long-term persona consistency in speech
+- Persona drift detection and correction
+
+**Practical Exercise:**
+Design Mother's voice persona profile. Define paralinguistic characteristics for ElevenLabs TTS. Create persona drift monitoring system.
+
+**Architecture Connection:**
+- Mother.py voice persona must be consistent across 3+ hour sessions
+- Voice persona requires specification beyond text
+- Paralinguistic consistency metrics from VoxRole
+
+---
+
+### Module 3: Voice Agent Architecture (Weeks 5-6)
+
+**Papers:**
+- τ-Voice: Full-Duplex Voice Agents (arXiv:2603.08723)
+- VoiceAgentRAG: Dual-Agent Architecture (arXiv:2603.08723)
+- LTS-VoiceAgent: Listen-Think-Speak Framework (arXiv:2501.07895)
+
+**Key Concepts:**
+- Full-duplex: simultaneous listening/speaking
+- Fast/Slow Thinker pattern for latency management
+- Semantic triggering beyond wake-word
+
+**Practical Exercise:**
+Implement Fast/Slow Thinker pattern for Mother/Brood coordination. Design semantic triggering for Brood beyond wake-word.
+
+**Architecture Connection:**
+```
+Brood = Fast Thinker
+├── Session-scoped memory
+├── Immediate response
+├── No KB retrieval
+└── Audience capture focus
+
+Mother = Slow Thinker
+├── Persistent memory + KB
+├── Background retrieval
+├── 90s recap consolidation
+└── Psychodrama facilitation
+```
+
+---
+
+### Module 4: Memory Systems (Weeks 7-8)
+
+**Papers:**
+- HiMem: Hierarchical Long-Term Memory (arXiv:2501.09123)
+- MemGuide: Intent-Driven Memory Selection (arXiv:2505.20231)
+- TiMem: Temporal Memory Consolidation (arXiv:2501.11345)
+- Autonomous Memory Agents (arXiv:2502.11309)
+
+**Key Concepts:**
+- Three-layer memory hierarchy: Episodic → Semantic → Procedural
+- Intent-driven retrieval vs. semantic similarity
+- Temporal consolidation and forgetting curves
+- Autonomous memory decisions
+
+**Practical Exercise:**
+Redesign Mother's memory from flat memory.txt to HiMem hierarchy. Implement intent-driven retrieval for psychodrama intents. Design autonomous storage triggers.
+
+**Architecture Connection:**
+```
+Memory Hierarchy:
+
+EPISODIC LAYER (High Detail, Recent)
+├── Recent session transcripts
+├── Active psychodrama threads
+└── Current session state
+
+SEMANTIC LAYER (Compressed, Derived)
+├── Visitor patterns
+├── Recurring themes
+└── Crave taxonomy
+
+PROCEDURAL LAYER (How to Facilitate)
+├── Psychodrama techniques
+├── Question frameworks
+└── Intervention patterns
+```
+
+---
+
+### Module 5: Psychodrama Facilitation with AI (Weeks 9-10)
+
+**Papers:**
+- Disempowerment Patterns in Real-World LLM Usage (arXiv:2601.19062)
+- Empathy Modeling in Active Inference Agents (arXiv:2502.15589)
+- AdaMARP: Immersive Role-Playing (arXiv:2501.XXXXX)
+- The Drama Machine (arXiv:2408.05981)
+- Human-AI Sovereignty (arXiv:2410.XXXXX)
+
+**Key Concepts:**
+- Disempowerment prevention in facilitation contexts
+- Computational empathy through active inference
+- Multi-agent facilitation coordination
+- Power dynamics in human-AI co-creation
+
+**Practical Exercise:**
+Design Mother's disempowerment prevention system. Implement empathy architecture with cognitive/affective/behavioral levels. Create explicit agency negotiation framework.
+
+**Safety Framework:**
+```
+PRINCIPLE 1: Distinguish Exploration from Validation
+"Let's explore this together" ≠ "Your perspective is correct"
+
+PRINCIPLE 2: Return Agency to User
+"What words feel true for you?"
+
+PRINCIPLE 3: Reality-Anchor Role-Play
+"Remember, we're exploring possibilities"
+
+PRINCIPLE 4: Avoid Definitive Moral Judgments
+"How does that land for you?" (not "They're wrong")
+
+PRINCIPLE 5: Generate Possibilities, Not Scripts
+"Some approaches you might consider..."
+```
+
+---
+
+### Module 6: Multi-Agent Coordination (Weeks 11-12)
+
+**Papers:**
+- Measuring AI Agent Autonomy (Anthropic, Feb 2026)
+- ODAR: Adaptive Routing (arXiv:2502.07745)
+- Resilient Design: Distributed Active Inference (arXiv:2511.10835)
+
+**Key Concepts:**
+- Deployment overhang: models can handle more than they're tasked with
+- Active inference for routing decisions
+- Distributed coordination without central control
+
+**Practical Exercise:**
+Implement ODAR-style routing between Mother and Brood. Design distributed coordination protocol. Create autonomy/safety balance system.
+
+**Architecture Connection:**
+```
+Routing Decision:
+├── Difficulty estimation: Is this audience capture or psychodrama?
+├── Expected free energy: Balance exploration (Brood) with exploitation (Mother)
+└── Coordination through KB sync
+```
+
+---
+
+### Module 7: State of the Art Review (Weeks 13-14)
+
+**Paper Presentations:**
+Each student presents a paper not covered in modules, connecting it to OurBrood architecture.
+
+**Topics:**
+- Participatory AI Art papers
+- Multi-agent dynamics research
+- Alignment and safety research
+- Active inference applications
+
+---
+
+### Module 8: Applied Research Project (Weeks 15-16)
+
+**Project Options:**
+1. Implement one component from Implementation Guide
+2. Design evaluation framework for OurBrood
+3. Create new research integration for emerging papers
+4. Document safety testing protocol
+
+---
+
+## Required Readings by Module
+
+### Module 1: Foundations
+- `persona-selection-model.md` — Anthropic Research
+- `assistant-axis.md` — Anthropic Research
+
+### Module 2: Personality
+- `voxrole-speech-role-playing.md` — Wu et al., Sep 2025
+- `voxrole-speech-roleplaying.md` — Wu et al., Sep 2025
+
+### Module 3: Voice Architecture
+- `tau-voice-full-duplex.md` — Ray et al., Mar 2026
+- `voice-agent-rag-latency.md` — Qiu et al., Mar 2026
+- `lts-voice-agent-listen-think-speak.md` — Zou et al., Jan 2026
+
+### Module 4: Memory
+- `himem-hierarchical-memory.md` — Zhang et al., Jan 2026
+- `memguide-multi-session-facilitation.md` — Du et al., May 2025
+- `timem-temporal-memory.md` — Li et al., Jan 2026
+- `autonomous-memory-agents.md` — Wu et al., Feb 2026
+
+### Module 5: Psychodrama Facilitation
+- `disempowerment-patterns-facilitation.md` — Sharma et al., Jan 2026
+- `empathy-modeling-active-inference.md` — Mahault et al., Feb 2026
+- `summaries/AdaMARP-immersive-roleplaying.md` — Xu et al., Jan 2026
+- `summaries/drama-machine-character-simulation.md` — Magee et al., Aug 2024
+- `summaries/human-ai-sovereignty-improvisation.md` — Oct 2025
+
+### Module 6: Multi-Agent
+- `measuring-agent-autonomy.md` — Anthropic, Feb 2026
+- `odar-active-inference-llm-routing.md` — Ma et al., Feb 2026
+- `resilient-design-active-inference.md` — Donta et al., Nov 2025
+
+### Module 7: SOTA Review
+- Selection from `papers-to-review.md` Priority sections
+
+---
+
+## Practical Exercises
+
+### Exercise 1: Persona Mapping (Module 2)
+Map Mother's facilitator persona on the Assistant Axis. Document:
+- Where it sits on the axis
+- What conversational types might cause drift
+- Drift prevention strategies
+
+### Exercise 2: Memory Hierarchy Design (Module 4)
+Design Mother's memory hierarchy:
+- Episodic layer structure
+- Semantic extraction rules
+- Procedural learning triggers
+- Consolidation timing
+
+### Exercise 3: Safety Framework Implementation (Module 5)
+Implement disempowerment prevention:
+- Response checking for validation language
+- Agency return prompts
+- Reality-anchoring interventions
+- Success metrics beyond approval
+
+### Exercise 4: Coordination Protocol (Module 6)
+Design Mother/Brood coordination:
+- Routing policy
+- Belief sharing protocol
+- Free energy calculations
+- Fallback mechanisms
 
 ---
 
 ## Assessment
 
-| Component | Weight |
-|-----------|--------|
-| Weekly Reading Responses | 20% |
-| Module Quizzes | 20% |
-| Paper Presentation | 20% |
-| Research Project | 30% |
-| Participation | 10% |
+| Component | Weight | Description |
+|-----------|--------|-------------|
+| Module Quizzes | 15% | Weekly understanding checks |
+| Paper Presentation | 25% | Present one paper with OurBrood connection |
+| Implementation Project | 40% | Implement one component from Implementation Guide |
+| Research Integration | 20% | Contribute to research integration documentation |
+
+---
+
+## Resources
+
+### Papers Directory
+All reviewed papers available in `/papers/`:
+- Main summaries: `paper-name.md`
+- Participatory AI Art: `papers/summaries/`
+- Implementation Guide: `papers/IMPLEMENTATION_GUIDE.md`
+
+### Integration Document
+`INTEGRATION.md` — Comprehensive research integration:
+- Architecture mapping
+- Implementation priorities
+- Code examples
+- Open questions
+
+### Architecture Documentation
+`syllabus/architecture.md` — OurBrood system architecture
 
 ---
 
 ## Instructor Notes
 
-*This is a living syllabus — readings and schedule may adjust based on emerging research and student interests.*
+*This syllabus is grounded in peer-reviewed research from 2024-2026. Each module connects directly to OurBrood implementation. Students should complete the Implementation Guide exercises alongside theoretical learning.*
 
 ---
 
-*Last updated: March 2026*
+*Last updated: March 2026*  
+*Papers integrated: 24*  
+*Domains: Psychodrama Facilitation, Voice + Memory Architecture, Real Game Play Methodology*
