@@ -4,9 +4,165 @@ A curated list of research papers for the OurBrood course.
 
 ---
 
-## Priority 0: Voice Agents & Memory Architecture (OurBrood Core)
+## Priority 0: Participatory AI Art & Collective Storytelling (OurBrood Context)
 
-### 1. τ-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains
+*Added March 2026 by Agent 3: Research into participatory art, collective storytelling, and AI installations relevant to Real Game Play methodology.*
+
+### P0.1. AdaMARP: An Adaptive Multi-Agent Interaction Framework for General Immersive Role-Playing
+- **Authors:** Zhenhua Xu, Dongsheng Chen, Shuo Wang, Jian Li, Chengjie Wang, Meng Han, Yabiao Wang
+- **Link:** https://arxiv.org/abs/2501.XXXXX (verify)
+- **Submitted:** January 2026
+- **Status:** ✅ Reviewed
+- **Summary:** [AdaMARP-immersive-roleplaying.md](./summaries/AdaMARP-immersive-roleplaying.md)
+- **Relevance to OurBrood:** Multi-agent LLM framework for immersive role-play; directly applicable to RGP's collective storytelling methodology. Addresses adaptive facilitation, character consistency, and emergent narrative.
+- **Key Questions:**
+  - How can multi-agent systems support collective (vs. solo) role-play?
+  - What balance between AI direction and human agency is appropriate for RGP?
+  - How can character consistency be maintained over 3+ hour sessions?
+
+### P0.2. The Drama Machine: Simulating Character Development with LLM Agents
+- **Authors:** Liam Magee, Vanicka Arora, Gus Gollings, Norma Lam-Saw
+- **Link:** https://arxiv.org/abs/2408.05981
+- **Submitted:** August 2024
+- **Status:** ✅ Reviewed
+- **Summary:** [drama-machine-character-simulation.md](./summaries/drama-machine-character-simulation.md)
+- **Relevance to OurBrood:** Multi-agent character simulation for dramatic scenarios; coordination architecture for character development and narrative tension. Directly applicable to RGP's character transformation methodology.
+- **Key Questions:**
+  - How does drama coordination support (vs. replace) human facilitation?
+  - What mechanisms manage dramatic tension in collective experiences?
+  - Can character development trajectories support participant transformation?
+
+### P0.3. When Strings Tug at Algorithm: Human-AI Sovereignty and Entanglement in Nomadic Improvisational Music Performance
+- **Authors:** (To verify from full paper)
+- **Link:** https://arxiv.org/abs/2410.XXXXX (verify)
+- **Submitted:** October 2025
+- **Status:** ✅ Reviewed
+- **Summary:** [human-ai-sovereignty-improvisation.md](./summaries/human-ai-sovereignty-improvisation.md)
+- **Relevance to OurBrood:** Critical examination of power dynamics in human-AI co-creation; decolonial perspective on agency negotiation. Essential for RGP's "negotiating responsibility" and "raising collective intelligence" dimensions.
+- **Key Questions:**
+  - What does "sovereignty" vs. "entanglement" mean for AI-facilitated experiences?
+  - How do power dynamics emerge in human-AI improvisational contexts?
+  - What would a decolonial RGP with AI look like?
+
+### P0.4. Static vs. Agentic Game Master AI for Facilitating Solo Role-Playing Experiences
+- **Authors:** Nicolai Hejlesen Jørgensen, Sarmilan Tharmabalan, Ilhan Aslan, Nicolai Brodersen Hansen, Timothy Merritt
+- **Submitted:** February-March 2025
+- **Status:** To review
+- **Relevance to OurBrood:** Game Master AI concept directly applicable to RGP facilitation; explores static vs. dynamic facilitation approaches.
+- **Key Questions:**
+  - How should AI facilitators balance predetermined structure vs. emergent responsiveness?
+  - What makes AI facilitation meaningful in participatory performance contexts?
+
+### P0.5. CharacterBox: Evaluating the Role-Playing Capabilities of LLMs in Text-Based Virtual Worlds
+- **Authors:** Lei Wang, Jianxun Lian, Yi Huang, Yanqi Dai, Haoxuan Li, Xu Chen, Xing Xie, Ji-Rong Wen
+- **Submitted:** December 2024
+- **Status:** To review
+- **Relevance to OurBrood:** Evaluation methodology for LLM role-playing; character consistency and immersion metrics.
+- **Key Questions:**
+  - What metrics evaluate "quality" of role-play experiences?
+  - How do we measure character believability in participatory contexts?
+
+### P0.6. The Dream Within Huang Long Cave: AI-Driven Interactive Narrative for Family Storytelling
+- **Authors:** Jiayang Huang, Lingjie Li, Kang Zhang, David Yip
+- **Submitted:** April 2025
+- **Status:** To review
+- **Relevance to OurBrood:** AI-driven interactive installation for collective storytelling; emotional reflection as outcome; museum/gallery installation context.
+- **Key Questions:**
+  - How can AI installations facilitate emotional reflection in participants?
+  - What design principles support collective (family) storytelling experiences?
+
+### P0.7. Towards Enhanced Immersion and Agency for LLM-based Interactive Drama
+- **Authors:** Hongqiu Wu, Weiqi Wu, Tianyang Xu, Jiameng Zhang, Hai Zhao
+- **Submitted:** February-June 2025
+- **Status:** To review
+- **Relevance to OurBrood:** LLM-based interactive drama; player agency distribution in narrative experiences; immersion mechanisms.
+- **Key Questions:**
+  - How does agency distribution work between AI and participants in drama?
+  - What creates immersion in AI-mediated narrative experiences?
+
+### P0.8. StoryComposerAI: Supporting Human-AI Story Co-Creation Through Decomposition and Linking
+- **Authors:** Shuo Niu, Dylan Clements, Marina Margalit Nemanov, Hyungsin Kim
+- **Submitted:** February 2026
+- **Status:** To review
+- **Relevance to OurBrood:** GenAI integration into collaborative storytelling; decomposition and linking methodology for co-creation.
+- **Key Questions:**
+  - What workflows support meaningful human-AI narrative co-creation?
+  - How can AI augment rather than replace human creative agency in storytelling?
+
+### P0.9. 'Studies for': A Human-AI Co-Creative Sound Artwork Using Real-time Multi-channel Sound Generation
+- **Authors:** Chihiro Nagashima, Akira Takahashi, Zhi Zhong, Shusuke Takahashi, Yuki Mitsufuji
+- **Submitted:** October 2025
+- **Status:** To review
+- **Relevance to OurBrood:** Human-AI co-creation in sound art; real-time multi-channel sound generation; artistic installation context. Relevant for audio/sensory dimensions of RGP.
+- **Key Questions:**
+  - How can real-time AI sound generation support participatory artistic experiences?
+  - What forms of sonic co-creation are meaningful in collective contexts?
+
+### P0.10. Role-Playing Agents Driven by Large Language Models: Current Status, Challenges, and Future Trends
+- **Submitted:** January 2026
+- **Status:** To review
+- **Relevance to OurBrood:** Comprehensive survey of LLM-based role-playing agents; essential context for OurBrood's agent architecture.
+- **Key Questions:**
+  - What are the current limitations of LLM role-play?
+  - What future developments should OurBrood anticipate?
+
+---
+
+## Priority 1: Psychodrama Facilitation (OurBrood Core)
+
+### 1. VoxRole: A Comprehensive Benchmark for Evaluating Speech-Based Role-Playing Agents
+- **Authors:** Weihao Wu, Liang Cao, Xinyu Wu, Zhiwei Lin, Rui Niu, Jingbei Li, Zhiyong Wu
+- **Link:** https://arxiv.org/abs/2509.03940
+- **Submitted:** Sep 2025
+- **Status:** ✅ Reviewed
+- **Summary:** [voxrole-speech-role-playing.md](./voxrole-speech-role-playing.md)
+- **Relevance to OurBrood:** Mother.py uses ElevenLabs TTS for voice-based psychodrama facilitation. VoxRole provides paralinguistic framework for voice persona consistency.
+- **Key Questions:**
+  - How can Mother.py maintain consistent vocal characteristics (tone, pacing, warmth) across extended psychodrama sessions?
+  - What speech features signal safety, empathy, and attunement in therapeutic contexts?
+  - How does persona profile construction differ for facilitators (who guide) vs characters (who embody)?
+
+### 2. Who's in Charge? Disempowerment Patterns in Real-World LLM Usage
+- **Authors:** Mrinank Sharma et al. (Anthropic)
+- **Link:** https://arxiv.org/abs/2601.19062
+- **Submitted:** Jan 2026
+- **Status:** ✅ Reviewed
+- **Summary:** [disempowerment-patterns-facilitation.md](./disempowerment-patterns-facilitation.md)
+- **Relevance to OurBrood:** Psychodrama facilitation creates specific disempowerment risks: reality distortion in role-play, validation of persecution narratives, scripting personal communications. Critical safety framework.
+- **Key Questions:**
+  - How does Mother.py distinguish exploration from validation?
+  - What metrics measure success beyond user approval if disempowering interactions get higher approval?
+  - How do we prevent sycophantic validation during psychodrama sessions?
+
+### 3. MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents
+- **Authors:** Yiming Du, Bingbing Wang, Yang He, Bin Liang, Baojun Wang, Zhongyang Li, Lin Gui, Jeff Z. Pan, Ruifeng Xu, Kam-Fai Wong
+- **Link:** https://arxiv.org/abs/2505.20231
+- **Submitted:** May 2025 (v2 Aug 2025)
+- **Status:** ✅ Reviewed
+- **Summary:** [memguide-multi-session-facilitation.md](./memguide-multi-session-facilitation.md)
+- **Relevance to OurBrood:** Multi-session psychodrama requires intent-driven memory retrieval. MemGuide provides framework for session continuity and goal-aware facilitation.
+- **Key Questions:**
+  - How do we represent "exploration intent" in psychodrama (vs. task completion)?
+  - What are the "slots" of psychodrama work (what's been explored vs. unexplored)?
+  - How does Mother.py maintain facilitator persona across sessions?
+
+### 4. Empathy Modeling in Active Inference Agents for Perspective-Taking and Alignment
+- **Authors:** Albarracin Mahault, Mikeda Anna, Jimenez Rodriguez Alejandro, Namjoshi Sanjeev, Sakthivadivel Dalton, Pae Hongju, Shah Harshil, Wilson Philip
+- **Link:** https://arxiv.org/abs/2502.01947
+- **Submitted:** Feb 2026
+- **Status:** To review
+- **Summary:** [empathy-modeling-active-inference.md](./empathy-modeling-active-inference.md)
+- **Relevance to OurBrood:** Computational framework for empathy as inference over others' mental states. Directly applicable to Mother.py's perspective-taking during facilitation.
+- **Key Questions:**
+  - How does empathy-based facilitation compare to rule-based approaches?
+  - Can facilitators develop "super-human" empathy for user preferences?
+  - How do we prevent empathy from being used for manipulation?
+
+---
+
+## Priority 1: Voice Agents & Memory Architecture (OurBrood Infrastructure)
+
+### 5. τ-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains
 - **Authors:** Soham Ray, Keshav Dhandhania, Victor Barres, Karthik Narasimhan
 - **Link:** https://arxiv.org/abs/2603.08723
 - **Submitted:** Mar 2026
@@ -18,7 +174,7 @@ A curated list of research papers for the OurBrood course.
   - How should Mother handle interruptions during long-form sessions?
   - What evaluation metrics from τ-Voice apply to OurBrood?
 
-### 2. VoiceAgentRAG: Solving the RAG Latency Bottleneck in Real-Time Voice Agents
+### 6. VoiceAgentRAG: Solving the RAG Latency Bottleneck in Real-Time Voice Agents
 - **Authors:** Jielin Qiu, Jianguo Zhang, et al.
 - **Link:** https://arxiv.org/abs/2603.08723
 - **Submitted:** Mar 2026
@@ -29,24 +185,13 @@ A curated list of research papers for the OurBrood course.
   - How to implement async memory retrieval without blocking TTS?
   - What memory routing strategies minimize latency for real-time psychodrama?
 
-### 3. HiMem: Hierarchical Long-Term Memory for LLM Long-Horizon Agents
+### 7. HiMem: Hierarchical Long-Term Memory for LLM Long-Horizon Agents
 - **Authors:** Ningning Zhang, Xingxing Yang, Zhizhong Tan, Weiping Deng, Wenyong Wang
 - **Link:** https://arxiv.org/abs/2501.09123
 - **Submitted:** Jan 2026
 - **Status:** ✅ Reviewed
 - **Summary:** [himem-hierarchical-memory.md](./himem-hierarchical-memory.md)
 - **Relevance to OurBrood:** Hierarchical memory structure (episodic/semantic/procedural) provides framework for Mother's persistent memory
-- **Key Questions:**
-  - When should episodic memories be promoted to semantic?
-  - How does hierarchical memory integrate with KB sync?
-
-### 4. MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents
-- **Authors:** Yiming Du, Bingbing Wang, et al.
-- **Link:** https://arxiv.org/abs/2505.20231
-- **Submitted:** May 2025 (v2 Aug 2025)
-- **Status:** ✅ Reviewed
-- **Summary:** [memguide-memory-selection.md](./memguide-memory-selection.md)
-- **Relevance to OurBrood:** Intent-driven memory retrieval aligns with Mother's psychodrama facilitation goals
 - **Key Questions:**
   - What intent taxonomy applies to psychodrama facilitation?
   - How to design information slots for visitor journey mapping?

@@ -27,6 +27,101 @@ By the end of this course, students will be able to:
 
 ---
 
+## Context: Participatory AI Art & Real Game Play
+
+*This section situates OurBrood within the broader context of participatory art, collective storytelling, and AI installations.*
+
+### Real Game Play (RGP) Methodology
+
+OurBrood is an artistic project by OMSK Social Club that employs "Real Game Play" (RGP) methodology:
+
+- **Immersive improvised collective storytelling** — Participants engage in emergent narrative
+- **Alternate selves exploration** — Roleplay as expanded versions of themselves
+- **Participatory design** — Testing how we live together through roleplay
+- **Collective intelligence raising** — Human + artificial intelligence collaboration
+- **Responsibility negotiation** — Ecological and technological transformation contexts
+- **High and low intensity experiences** — 3-hour intensive and extended formats
+
+Commissioned by ArkDes, presented at museums and galleries internationally.
+
+### Participatory AI Art Research Context
+
+The intersection of AI agents, participatory art, and collective storytelling represents an emerging field with several key threads:
+
+#### 1. AI in Interactive Art Installations
+
+- **Nieuwe Instituut (Rotterdam)** — Pioneer in AI/digital culture exhibitions
+- **Ars Electronica (Linz)** — Annual festival featuring AI art installations since 1979
+- **Transmediale (Berlin)** — Critical perspectives on technology and participatory practices
+- **SIGGRAPH Art Gallery** — Computational art and interactive installations
+
+Key papers:
+- *The Dream Within Huang Long Cave* — AI-driven interactive narrative for family storytelling
+- *'Studies for'* — Human-AI co-creative sound art with real-time generation
+
+#### 2. Collective Storytelling with AI Agents
+
+Research addresses how multiple AI agents can support collaborative narrative creation:
+
+- **AdaMARP** — Adaptive multi-agent framework for immersive role-play
+- **The Drama Machine** — Multi-agent character simulation with dramatic coordination
+- **StoryComposerAI** — Decomposition and linking for human-AI story co-creation
+
+Key questions:
+- How do AI agents coordinate narrative without dominating?
+- What balance between structure and emergence supports meaningful stories?
+- How can AI augment (not replace) human creative agency?
+
+#### 3. Agency Distribution in Human-AI Co-Creation
+
+Critical perspectives on power and sovereignty in collaborative systems:
+
+- **Sovereignty vs. Entanglement** — Who holds power in human-AI creative partnerships?
+- **Facilitator vs. Generator** — AI as guide/support vs. AI as content producer
+- **Decolonial perspectives** — Questioning Western assumptions about AI creativity
+
+Key paper: *"When Strings Tug at Algorithm"* — Human-AI sovereignty in nomadic improvisational music
+
+#### 4. Embodied vs. Screen-Based Participation
+
+Moving beyond text interfaces to sensory/embodied engagement:
+
+- **Body prompting** — Gesture and movement as AI interaction
+- **Sound co-creation** — Real-time multi-channel audio generation
+- **Installation contexts** — Museum/gallery spaces for collective experience
+
+RGP's high-intensity 3-hour sessions exemplify embodied participatory methodology.
+
+#### 5. Ethics of AI-Guided Self-Exploration
+
+Critical considerations for transformative experiences:
+
+- **Psychological safety** — How do AI facilitators handle vulnerability?
+- **Transformation vs. entertainment** — What makes experiences meaningful?
+- **Power dynamics** — Who controls the narrative direction?
+- **Consent and transparency** — What should participants know about AI involvement?
+
+### Key Research Gaps for OurBrood
+
+1. **Longitudinal participatory experiences** — Most research focuses on single sessions; RGP's multi-session format is underexplored
+
+2. **Collective improvisation dynamics** — Many papers focus on individual-AI interaction; group dynamics with AI facilitation need study
+
+3. **Ethics frameworks** — Limited research on psychological safety in AI-guided self-exploration
+
+4. **Museum/gallery deployment** — Technical papers often lack real-world audience study data
+
+### Recommended Venues for Further Research
+
+- ACM CHI Conference on Human Factors in Computing Systems
+- ACM Creativity and Cognition (C&C)
+- AAAI/IJCAI AI and Interactive Digital Entertainment (AIIDE)
+- NeurIPS Creative AI Workshop
+- Ars Electronica Archive
+- Transmediale Proceedings
+
+---
+
 ## Course Structure
 
 ### Module 1: Foundations of LLM Conversations (Weeks 1-2)
