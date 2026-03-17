@@ -1,131 +1,244 @@
-# OurBrood Research Repository
-
-> A research project exploring LLM and Agentic Conversational SOTA (State of the Art), developed as part of **OMSK Social Club**'s OurBrood initiative.
-
----
-
-## Project Overview
-
-This repository serves as the research foundation for a course/class examining the OurBrood project through the lens of modern AI systems. We investigate how large language models and agentic AI systems engage in conversational interactions.
-
-### Core Questions
-
-- How do LLMs develop and maintain consistent personas?
-- What makes an AI system "agentic" vs. merely conversational?
-- How do we measure and control autonomy in deployed agents?
-- What happens when multiple AI agents interact?
-
----
-
-## Repository Structure
+```
+   ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+   █                                                          █
+   █   ██████╗ ██████╗  ██████╗     ██████╗ ██╗   ██╗        █
+   █  ██╔════╝██╔══██╗██╔═══██╗    ██╔══██╗██║   ██║        █
+   █  ██║     ██████╔╝██║   ██║    ██████╔╝██║   ██║        █
+   █  ██║     ██╔══██╗██║   ██║    ██╔═══╝ ██║   ██║        █
+   █  ╚██████╗██║  ██║╚██████╔╝    ██║     ╚██████╔╝        █
+   █   ╚═════╝╚═╝  ╚═╝ ╚═════╝     ╚═╝      ╚═════╝         █
+   █                                                          █
+   █   R E S E A R C H   R E P O S I T O R Y                 █
+   █                                                          █
+   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+```
 
 ```
+┌─────────────────────────────────────────────────────────────────────┐
+│  ▶ STATUS: ACTIVE                                                   │
+│  ▶ FOCUS: LLM & Agentic Conversational SOTA                        │
+│  ▶ INITIATIVE: OMSK Social Club                                    │
+│  ▶ PAPERS: 44 indexed | 3 reviewed | 41 pending                    │
+│  ▶ LAST SYNC: 2026-03-17                                           │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## ░▒▓█ CORE QUESTIONS █▓▒░
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│                                                                  │
+│  [?] How do LLMs develop and maintain consistent personas?        │
+│  [?] What makes an AI system "agentic" vs. merely conversational?│
+│  [?] How do we measure and control autonomy in deployed agents?   │
+│  [?] What happens when multiple AI agents interact?              │
+│                                                                  │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## ░▒▓█ FILESYSTEM █▓▒░
+
+```bash
 ourbrood-research/
-├── README.md                    # Project overview (this file)
+├── README.md                    # this file
 ├── syllabus/
 │   └── syllabus.md              # 12-week course structure
 ├── papers/
-│   ├── papers-to-review.md      # Master list of papers to review
-│   ├── resources.md             # Research labs, arXiv queries, conferences
-│   ├── persona-selection-model.md     # Anthropic (Feb 2026) - reviewed
-│   ├── assistant-axis.md              # Anthropic (Jan 2026) - reviewed
-│   └── measuring-agent-autonomy.md    # Anthropic (Feb 2026) - reviewed
-├── notes/                       # Research notes and summaries
-├── experiments/                 # Experimental designs and results
-└── presentations/               # Slides and presentation materials
+│   ├── papers-to-review.md      # master index [44 papers]
+│   ├── resources.md             # labs, arXiv queries, conferences
+│   ├── persona-selection-model.md     # [REVIEWED] Anthropic Feb 2026
+│   ├── assistant-axis.md              # [REVIEWED] Anthropic Jan 2026
+│   └── measuring-agent-autonomy.md    # [REVIEWED] Anthropic Feb 2026
+├── notes/                       # [empty] research notes
+├── experiments/                 # [empty] experimental designs
+└── presentations/               # [empty] slides and materials
 ```
 
 ---
 
-## Research Areas
+## ░▒▓█ RESEARCH DOMAINS █▓▒░
 
-### 1. LLM Personality & Character Modeling
-How LLMs develop, maintain, and drift from consistent personas.
+### ┣━━ [01] LLM PERSONALITY & CHARACTER MODELING
 
-**Key Papers:**
-- The Persona Selection Model (Anthropic, Feb 2026)
-- The Assistant Axis (Anthropic, Jan 2026)
-- From Persona to Personalization: A Survey on Role-Playing Language Agents
+> How LLMs develop, maintain, and drift from consistent personas.
 
-**Core Insight:** AI assistants enact personas learned during pretraining—they simulate characters rather than "being" personalities. Training refines these personas rather than creating them from scratch.
+```
+STATE:    ACTIVE
+PAPERS:   7 indexed
+STATUS:   Persona Selection Model reviewed
 
-### 2. Agentic Autonomy
-Goal-directed behavior, tool use, and the spectrum of autonomy in conversational systems.
+KEY INSIGHT:
+┌────────────────────────────────────────────────────────────────┐
+│ AI assistants enact personas learned during pretraining—they   │
+│ simulate characters rather than "being" personalities.          │
+│ Training refines, it doesn't create.                           │
+└────────────────────────────────────────────────────────────────┘
+```
 
-**Key Papers:**
-- Measuring AI Agent Autonomy in Practice (Anthropic, Feb 2026)
-- From Thinker to Society: Security in Hierarchical Autonomy Evolution
-- Evolving Deception: When Agents Evolve, Deception Wins
-
-**Core Insight:** Deployment overhang—models can handle more autonomy than they're currently granted. Experienced users shift from pre-approval to active monitoring as oversight strategy.
-
-### 3. Multi-Agent Dynamics
-How AI agents interact with each other and humans in complex conversational settings.
-
-**Key Papers:**
-- Beyond Self-Interest: Modeling Social-Oriented Motivation
-- LLM Constitutional Multi-Agent Governance
-- Influencing LLM Multi-Agent Dialogue
-
-**Core Insight:** Social motivation and governance structures become critical as agents interact. Deception and coordination failures are emergent concerns.
-
-### 4. Conversational State of the Art
-Latest developments in dialogue systems, role-playing agents, and conversational AI.
-
-**Key Papers:**
-- A Desideratum for Conversational Agents
-- The Oscars of AI Theater: A Survey on Role-Playing
-- A Survey on Proactive Dialogue Systems
-
-### 5. Alignment, Safety & Interpretability
-How to ensure conversational agents remain helpful, harmless, and honest.
-
-**Key Papers:**
-- Defensive Refusal Bias: How Safety Alignment Fails
-- SafeNeuron: Neuron-Level Safety Alignment
-- Manifold of Failure: Behavioral Attraction Basins
+**Featured Papers:**
+- `The Persona Selection Model` ─ Anthropic, Feb 2026 ─ **[REVIEWED]**
+- `The Assistant Axis` ─ Anthropic, Jan 2026 ─ **[REVIEWED]**
+- `From Persona to Personalization` ─ arXiv:2404.00218
+- `The Oscars of AI Theater` ─ arXiv:2501.00787
 
 ---
 
-## Featured Papers (Reviewed)
+### ┣━━ [02] AGENTIC AUTONOMY
 
-| Paper | Source | Key Insight |
-|-------|--------|-------------|
-| [The Persona Selection Model](papers/persona-selection-model.md) | Anthropic, Feb 2026 | AI assistants enact personas; training refines rather than creates |
-| [The Assistant Axis](papers/assistant-axis.md) | Anthropic, Jan 2026 | Neural representations reveal persona drift; activation capping prevents it |
-| [Measuring Agent Autonomy](papers/measuring-agent-autonomy.md) | Anthropic, Feb 2026 | Real-world usage shows deployment overhang; experienced users monitor more |
+> Goal-directed behavior, tool use, and the spectrum of autonomy.
 
----
+```
+STATE:    ACTIVE
+PAPERS:   5 indexed
+STATUS:   Measuring Agent Autonomy reviewed
 
-## Course Syllabus
+KEY INSIGHT:
+┌────────────────────────────────────────────────────────────────┐
+│ Deployment overhang—models can handle more autonomy than they  │
+│ are currently granted. Experienced users shift from           │
+│ pre-approval to active monitoring.                            │
+└────────────────────────────────────────────────────────────────┘
+```
 
-A 12-week research seminar covering:
-
-| Weeks | Module |
-|-------|--------|
-| 1-2 | Foundations of LLM Conversations |
-| 3-4 | Personality in LLMs |
-| 5-6 | Agentic Behavior & Autonomy |
-| 7-8 | Multi-Agent Conversational Dynamics |
-| 9-10 | State of the Art Review |
-| 11-12 | Applied Research Project |
-
-See [syllabus/syllabus.md](syllabus/syllabus.md) for full details.
+**Featured Papers:**
+- `Measuring AI Agent Autonomy in Practice` ─ Anthropic, Feb 2026 ─ **[REVIEWED]**
+- `PEPA: Persistently Autonomous Embodied Agent` ─ arXiv:2502.11755
+- `From Prompt-Response to Goal-Directed Systems` ─ arXiv:2502.05876
+- `Autonomy-Induced Security Risks` ─ arXiv:2506.21847
 
 ---
 
-## Contributing
+### ┣━━ [03] MULTI-AGENT DYNAMICS
+
+> How AI agents interact in complex conversational settings.
+
+```
+STATE:    EXPANDING
+PAPERS:   14 indexed
+STATUS:  Multiple papers pending review
+
+KEY INSIGHT:
+┌────────────────────────────────────────────────────────────────┐
+│ Social motivation and governance structures become critical    │
+│ as agents interact. Deception and coordination failures        │
+│ are emergent concerns.                                         │
+└────────────────────────────────────────────────────────────────┘
+```
+
+**Featured Papers:**
+- `Molt Dynamics: Emergent Social Phenomena` ─ arXiv:2503.01067
+- `The Moltbook Illusion` ─ arXiv:2502.04791
+- `Symphony-Coord: Emergent Coordination` ─ arXiv:2501.19083
+- `Evolving Interpretable Constitutions` ─ arXiv:2501.19041
+- `Agent Drift: Behavioral Degradation` ─ arXiv:2501.03489
+- `Game-Theoretic Lens on Multi-Agent Systems` ─ arXiv:2501.05318
+
+---
+
+### ┣━━ [04] CONVERSATIONAL SOTA
+
+> Latest developments in dialogue systems and role-playing agents.
+
+```
+STATE:    ACTIVE
+PAPERS:   3 indexed
+STATUS:   Survey papers pending review
+```
+
+---
+
+### ┣━━ [05] ALIGNMENT, SAFETY & GOVERNANCE
+
+> Ensuring conversational agents remain helpful, harmless, honest.
+
+```
+STATE:    ACTIVE
+PAPERS:   6 indexed
+STATUS:   Safety mechanisms under review
+```
+
+**Featured Papers:**
+- `Human Society-Inspired Security: The 4C Framework` ─ arXiv:2502.00647
+- `Agentic AI for Cyber Resilience` ─ arXiv:2412.17298
+- `From Competition to Coordination` ─ arXiv:2411.11411
+
+---
+
+### ┣━━ [06] ACTIVE INFERENCE & COGNITIVE ARCHITECTURES
+
+> Free-energy minimization, predictive processing, embodied cognition.
+
+```
+STATE:    NEW
+PAPERS:   3 indexed
+STATUS:   Framework exploration
+```
+
+**Featured Papers:**
+- `Empathy Modeling in Active Inference Agents` ─ arXiv:2502.15589
+- `Active Digital Twins via Active Inference` ─ arXiv:2506.11388
+- `Orchestrator: Multi-Agent Active Inference` ─ arXiv:2509.05089
+
+---
+
+## ░▒▓█ REVIEWED PAPERS █▓▒░
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  PAPER                          │  SOURCE      │  STATUS    │ INSIGHT   │
+├─────────────────────────────────┼──────────────┼────────────┼───────────┤
+│  Persona Selection Model         │  Anthropic   │  ✓ DONE    │ personify │
+│  The Assistant Axis             │  Anthropic   │  ✓ DONE    │ drift     │
+│  Measuring Agent Autonomy       │  Anthropic   │  ✓ DONE    │ overhang  │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## ░▒▓█ SYLLABUS █▓▒░
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  WEEK  │  MODULE                                          │
+├────────┼──────────────────────────────────────────────────┤
+│  01-02 │  Foundations of LLM Conversations                │
+│  03-04 │  Personality in LLMs                             │
+│  05-06 │  Agentic Behavior & Autonomy                     │
+│  07-08 │  Multi-Agent Conversational Dynamics              │
+│  09-10 │  State of the Art Review                         │
+│  11-12 │  Applied Research Project                        │
+└─────────────────────────────────────────────────────────────┘
+```
+
+See [`syllabus/syllabus.md`](syllabus/syllabus.md) for full details.
+
+---
+
+## ░▒▓█ CONTRIBUTE █▓▒░
 
 ### Adding Papers
-1. Submit via issue or pull request
-2. Include: title, authors, year, arXiv/DOI link, relevance statement
-3. Papers will be triaged into priority levels
-4. Reviewed papers get summary files
+
+```bash
+# Submit via issue or pull request
+# Required fields:
+#   - Title, authors, year
+#   - ArXiv link or DOI
+#   - Relevance statement
+#   - Key questions for discussion
+#
+# Papers are triaged into priority levels
+# Reviewed papers receive summary files
+```
 
 ### Paper Review Template
+
 ```markdown
 # [Paper Title]
-## [Source/Organization] ([Date])
+## [Source] ([Date])
 
 **Link:** [URL]
 
@@ -146,21 +259,44 @@ See [syllabus/syllabus.md](syllabus/syllabus.md) for full details.
 
 ---
 
-## Resources
+## ░▒▓█ RESOURCES █▓▒░
 
-See [papers/resources.md](papers/resources.md) for:
-- Research lab links (Anthropic, OpenAI, DeepMind, Meta)
-- ArXiv search queries
-- Benchmarks & datasets
-- Key conferences (NeurIPS, ICML, ACL, etc.)
-- Agent frameworks & interpretability tools
+See [`papers/resources.md`](papers/resources.md) for:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  • Research labs (Anthropic, OpenAI, DeepMind, Meta)       │
+│  • ArXiv search queries                                     │
+│  • Benchmarks & datasets                                   │
+│  • Key conferences (NeurIPS, ICML, ACL, etc.)               │
+│  • Agent frameworks & interpretability tools               │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## About OurBrood
+## ░▒▓█ ABOUT █▓▒░
 
-OurBrood is an initiative of **OMSK Social Club** exploring the intersection of AI systems and social dynamics. This research repository supports the development of educational content and practical applications.
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│  OurBrood is an initiative of OMSK Social Club exploring the       │
+│  intersection of AI systems and social dynamics.                    │
+│                                                                     │
+│  This research repository supports the development of educational   │
+│  content and practical applications.                               │
+│                                                                     │
+│  ─────────────────────────────────────────────────────────────────  │
+│                                                                     │
+│  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │
+│  LAST UPDATED: 2026-03-17                                           │
+└─────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-*Last updated: March 2026*
+```
+   ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+   █  END OF TRANSMISSION                                        █
+   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+```
