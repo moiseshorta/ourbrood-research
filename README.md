@@ -1,6 +1,6 @@
 ```
-Workshop “Our Br00d – Technical Development of Agentic AI in Artistic Research
-           R E S E A R C H   R E P O S I T O R Y
+Workshop “Our Br00d – Technical Development of Agentic AI in Artistic Research"
+                       R E P O S I T O R Y
 ```
 
 ```
