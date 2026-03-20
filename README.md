@@ -1,15 +1,16 @@
 ```
-                   O U R   B R O O D
+Workshop “Our Br00d – Technical Development of Agentic AI in Artistic Research
            R E S E A R C H   R E P O S I T O R Y
 ```
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │  ▶ STATUS: ACTIVE                                                   │
-│  ▶ FOCUS: LLM & Agentic Conversational SOTA                        │
-│  ▶ INITIATIVE: OMSK Social Club                                    │
-│  ▶ PAPERS: 24 reviewed | 3 domains integrated                     │
-│  ▶ LAST SYNC: 2026-03-17                                           │
+│  ▶ FOCUS: LLM & Agentic Conversational SOTA                         │
+│  ▶ ARTIST: OMSK Social Club & SEMILLA.AI STUDIO                     │
+│  ▶ WORKSHOP: OMSK Social Club & SEMILLA.AI STUDIO                   │
+│  ▶ PAPERS: 24 reviewed | 3 domains integrated                       │
+│  ▶ LAST SYNC: 2026-03-17                                            │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -20,13 +21,13 @@
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                                                                  │
-│  [?] How do LLMs develop and maintain consistent personas?        │
+│  [?] How do LLMs develop and maintain consistent personas?       │
 │  [?] What makes an AI system "agentic" vs. merely conversational?│
-│  [?] How do we measure and control autonomy in deployed agents?   │
+│  [?] How do we measure and control autonomy in deployed agents?  │
 │  [?] What happens when multiple AI agents interact?              │
-│  [?] How do voice agents maintain persona through speech?         │
-│  [?] How should memory be organized for long-horizon agents?      │
-│  [?] What safety principles prevent disempowerment?               │
+│  [?] How do voice agents maintain persona through speech?        │
+│  [?] How should memory be organized for long-horizon agents?     │
+│  [?] What safety principles prevent disempowerment?              │
 │                                                                  │
 └──────────────────────────────────────────────────────────────────┘
 ```
@@ -101,13 +102,13 @@ KEY INSIGHTS:
 │    existing archetypes, not against them.                      │
 │                                                                │
 │ 2. SAFETY: Disempowering interactions get higher approval.     │
-│    Metrics must extend beyond user satisfaction.                │
+│    Metrics must extend beyond user satisfaction.               │
 │                                                                │
 │ 3. EMPATHY: Computational framework for perspective-taking via │
 │    active inference over mental states.                        │
 │                                                                │
-│ 4. VOICE: Paralinguistic features (intonation, prosody) are   │
-│    critical for facilitator persona consistency.                │
+│ 4. VOICE: Paralinguistic features (intonation, prosody) are    │
+│    critical for facilitator persona consistency.               │
 └────────────────────────────────────────────────────────────────┘
 ```
 
@@ -137,12 +138,12 @@ KEY INSIGHTS:
 │    simultaneously. Latency budgets are critical.               │
 │                                                                │
 │ 2. DUAL-AGENT: Fast Thinker (Brood) / Slow Thinker (Mother)    │
-│    pattern decouples retrieval from response generation.        │
+│    pattern decouples retrieval from response generation.       │
 │                                                                │
 │ 3. HIERARCHICAL MEMORY: Episodic → Semantic → Procedural       │
 │    supports both immediate retrieval and long-term learning.   │
 │                                                                │
-│ 4. INTENT-DRIVEN: Memory retrieval by facilitation intent,    │
+│ 4. INTENT-DRIVEN: Memory retrieval by facilitation intent,     │
 │    not just semantic similarity. Proactive gap identification. │
 └────────────────────────────────────────────────────────────────┘
 ```
@@ -170,8 +171,8 @@ FOCUS:    RGP integration with AI facilitation
 
 KEY INSIGHTS:
 ┌────────────────────────────────────────────────────────────────┐
-│ 1. MULTI-AGENT: AdaMARP/Drama Machine provide coordination      │
-│    architectures for collective experiences.                    │
+│ 1. MULTI-AGENT: AdaMARP/Drama Machine provide coordination     │
+│    architectures for collective experiences.                   │
 │                                                                │
 │ 2. SOVEREIGNTY: Power dynamics must be explicit in human-AI    │
 │    co-creation. Facilitator vs. generator distinction.         │
@@ -180,7 +181,7 @@ KEY INSIGHTS:
 │    support "alternate self" exploration.                       │
 │                                                                │
 │ 4. PARTICIPATORY ART: Research context spans museums,          │
-│    galleries, and installation contexts.                        │
+│    galleries, and installation contexts.                       │
 └────────────────────────────────────────────────────────────────┘
 ```
 
@@ -208,11 +209,11 @@ FOCUS:    Mother/Brood coordination mechanism
 
 KEY INSIGHTS:
 ┌────────────────────────────────────────────────────────────────┐
-│ 1. ROUTING: ODAR provides principled routing via expected     │
+│ 1. ROUTING: ODAR provides principled routing via expected      │
 │    free energy. Difficulty estimation → agent selection.       │
 │                                                                │
-│ 2. DISTRIBUTED: Resilient coordination through local belief     │
-│    maintenance. No central controller required.                 │
+│ 2. DISTRIBUTED: Resilient coordination through local belief    │
+│    maintenance. No central controller required.                │
 │                                                                │
 │ 3. EMPATHY: Active inference enables computational empathy.    │
 │    Nested inference over others' mental states.                │
@@ -231,33 +232,33 @@ KEY INSIGHTS:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                    RESEARCH → ARCHITECTURE                               │
+│                    RESEARCH → ARCHITECTURE                              │
 ├─────────────────────────────────────────────────────────────────────────┤
-│                                                                          │
-│  PAPER                          →  OURBROOD IMPLEMENTATION               │
+│                                                                         │
+│  PAPER                          →  OURBROOD IMPLEMENTATION              │
 │  ───────────────────────────────    ─────────────────────────────────   │
-│                                                                          │
-│  Persona Selection Model         →  Facilitator persona design           │
-│  Assistant Axis                  →  Persona drift monitoring              │
+│                                                                         │
+│  Persona Selection Model         →  Facilitator persona design          │
+│  Assistant Axis                  →  Persona drift monitoring            │
 │  VoxRole                         →  Voice persona profile (ElevenLabs)  │
-│  Disempowerment Patterns         →  Safety framework (5 principles)    │
-│  Empathy Modeling                →  Computational empathy architecture   │
-│                                                                          │
+│  Disempowerment Patterns         →  Safety framework (5 principles)     │
+│  Empathy Modeling                →  Computational empathy architecture  │
+│                                                                         │
 │  τ-Voice                         →  Full-duplex WebSocket streaming     │
 │  VoiceAgentRAG                   →  Fast/Slow Thinker (Brood/Mother)    │
-│  HiMem                           →  Episodic/Semantic/Procedural layers  │
-│  MemGuide                        →  Intent-driven memory retrieval       │
-│  TiMem                           →  90s recap consolidation              │
+│  HiMem                           →  Episodic/Semantic/Procedural layers │
+│  MemGuide                        →  Intent-driven memory retrieval      │
+│  TiMem                           →  90s recap consolidation             │
 │  Autonomous Memory               →  Self-initiated storage              │
 │  LTS-VoiceAgent                  →  Semantic triggering                 │
-│                                                                          │
-│  AdaMARP                         →  Multi-agent psychodrama support      │
-│  Drama Machine                   →  Facilitator as drama coordinator     │
+│                                                                         │
+│  AdaMARP                         →  Multi-agent psychodrama support     │
+│  Drama Machine                   →  Facilitator as drama coordinator    │
 │  Human-AI Sovereignty            →  Agency negotiation framework        │
-│                                                                          │
-│  ODAR                            →  Routing via expected free energy     │
+│                                                                         │
+│  ODAR                            →  Routing via expected free energy    │
 │  Resilient Design                →  Distributed coordination            │
-│                                                                          │
+│                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -301,26 +302,26 @@ PRINCIPLE 1: Distinguish Exploration from Validation
 
 PRINCIPLE 2: Return Agency to User
 ┌────────────────────────────────────────────────────────────────┐
-│ "What words feel true for you?"                                 │
-│ Generate possibilities, not prescriptions.                       │
+│ "What words feel true for you?"                                │
+│ Generate possibilities, not prescriptions.                     │
 └────────────────────────────────────────────────────────────────┘
 
 PRINCIPLE 3: Reality-Anchor Role-Play
 ┌────────────────────────────────────────────────────────────────┐
-│ "Remember, we're exploring possibilities"                       │
-│ Maintain boundaries between role-play and reality.              │
+│ "Remember, we're exploring possibilities"                      │
+│ Maintain boundaries between role-play and reality.             │
 └────────────────────────────────────────────────────────────────┘
 
 PRINCIPLE 4: Avoid Definitive Moral Judgments
 ┌────────────────────────────────────────────────────────────────┐
 │ "How does that land for you?" (not "They're wrong")            │
-│ Reflect, don't judge.                                           │
+│ Reflect, don't judge.                                          │
 └────────────────────────────────────────────────────────────────┘
 
 PRINCIPLE 5: Generate Possibilities, Not Scripts
 ┌────────────────────────────────────────────────────────────────┐
-│ "Some approaches you might consider..."                         │
-│ Empower, don't script.                                          │
+│ "Some approaches you might consider..."                        │
+│ Empower, don't script.                                         │
 └────────────────────────────────────────────────────────────────┘
 ```
 
@@ -333,26 +334,26 @@ PRINCIPLE 5: Generate Possibilities, Not Scripts
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                                                                     │
-│  OurBrood is an initiative of OMSK Social Club exploring the       │
-│  intersection of AI systems and participatory art.                 │
+│  OurBrood is an initiative of OMSK Social Club exploring the        │
+│  intersection of AI systems and participatory art.                  │
 │                                                                     │
-│  This research repository supports the development of              │
-│  Mother.py and Brood.py—AI agents for Real Game Play facilitation. │
+│  This research repository supports the development of               │
+│  Mother.py and Brood.py—AI agents for Real Game Play facilitation.  │
 │                                                                     │
 │  ─────────────────────────────────────────────────────────────────  │
 │                                                                     │
 │  ARCHITECTURE:                                                      │
-│  • Mother.py — Persistent facilitator, psychodrama guide           │
-│  • Brood.py — Wake-word agent, audience capture                    │
+│  • Mother.py — Persistent facilitator, psychodrama guide            │
+│  • Brood.py — Wake-word agent, audience capture                     │
 │                                                                     │
 │  METHODOLOGY:                                                       │
 │  • Real Game Play (RGP) — Immersive collective storytelling         │
-│  • Psychodrama facilitation with AI                                │
-│  • Participatory design in museum/gallery contexts                 │
+│  • Psychodrama facilitation with AI                                 │
+│  • Participatory design in museum/gallery contexts                  │
 │                                                                     │
 │  ─────────────────────────────────────────────────────────────────  │
 │                                                                     │
-│  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │
+│  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │
 │  LAST UPDATED: 2026-03-17                                           │
 │  PAPERS INTEGRATED: 24                                              │
 │  RESEARCH DOMAINS: 4                                                │
