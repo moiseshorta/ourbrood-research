@@ -1,7 +1,7 @@
 # VoiceAgentRAG: Solving the RAG Latency Bottleneck in Real-Time Voice Agents Using Dual-Agent Architectures
 
 **Authors:** Jielin Qiu, Jianguo Zhang, Zixiang Chen, Liangwei Yang, Ming Zhu, Juntao Tan, Haolin Chen, Wenting Zhao, Rithesh Murthy, Roshan Ram, Akshara Prabhakar, Shelby Heinecke, Caiming Xiong, Silvio Savarese, Huan Wang  
-**Link:** https://arxiv.org/abs/2603.08723 (March 2026)  
+**Link:** [https://arxiv.org/abs/2603.08723](https://arxiv.org/pdf/2603.02206) (March 2026)  
 **Submitted:** March 2026
 
 ## Abstract
