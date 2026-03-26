@@ -1,7 +1,7 @@
 # LTS-VoiceAgent: A Listen-Think-Speak Framework for Efficient Streaming Voice Interaction via Semantic Triggering and Incremental Reasoning
 
 **Authors:** Wenhao Zou, Yuwei Miao, Zhanyu Ma, Jun Xu, Jiuchong Gao, Jinghua Hao, Renqing He, Jingwen Xu  
-**Link:** https://arxiv.org/abs/2501.07895 (January 2026)  
+**Link:** https://arxiv.org/abs/2601.19952 (January 2026)  
 **Submitted:** January 2026
 
 ## Abstract
