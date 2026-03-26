@@ -1,10 +1,10 @@
 # When Strings Tug at Algorithm: Human-AI Sovereignty and Entanglement in Nomadic Improvisational Music Performance as a Decolonial Exploration
 
-**Authors:** (Author names to verify from full paper)
+**Authors:** Joshua Nijiati Alimujiang
 
 **Source:** arXiv, October 2025
 
-**Link:** https://arxiv.org/abs/2410.XXXXX (verify)
+**Link:** [https://arxiv.org/abs/2410.XXXXX (verify)](https://arxiv.org/pdf/2510.19086)
 
 ---
 
