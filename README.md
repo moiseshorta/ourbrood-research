@@ -10,7 +10,7 @@ Workshop “Our Br00d – Technical Development of Agentic AI in Artistic Resear
 │  ▶ ARTIST: OMSK Social Club & SEMILLA.AI STUDIO                     │
 │  ▶ WORKSHOP: OMSK Social Club & SEMILLA.AI STUDIO                   │
 │  ▶ PAPERS: 24 reviewed | 3 domains integrated                       │
-│  ▶ LAST SYNC: 2026-03-17                                            │
+│  ▶ LAST SYNC: 2026-03-26                                            │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
