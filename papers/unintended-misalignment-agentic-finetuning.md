@@ -2,7 +2,7 @@
 
 ## Metadata
 - **Authors:** Dongyoon Hahm, Taywon Min, Woogyeol Jin, Kimin Lee
-- **Link:** https://arxiv.org/abs/2508.11952
+- **Link:** [https://arxiv.org/abs/2508.11952](https://arxiv.org/abs/2508.14031)
 - **Submitted:** August 2025 (v1), November 2025 (latest)
 - **Status:** To review
 - **arXiv ID:** 2508.11952
