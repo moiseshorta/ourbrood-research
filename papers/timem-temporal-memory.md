@@ -1,7 +1,7 @@
 # TiMem: Temporal-Hierarchical Memory Consolidation for Long-Horizon Conversational Agents
 
 **Authors:** Kai Li, Xuanqing Yu, Ziyi Ni, Yi Zeng, Yao Xu, Zheqing Zhang, Xin Li, Jitao Sang, Xiaogang Duan, Xuelei Wang, Chengbao Liu, Jie Tan  
-**Link:** https://arxiv.org/abs/2501.11345 (January 2026)  
+**Link:** [https://arxiv.org/abs/2501.11345](https://arxiv.org/abs/2601.02845) (January 2026)  
 **Submitted:** January 2026
 
 ## Abstract
