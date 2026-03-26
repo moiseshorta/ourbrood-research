@@ -1,7 +1,7 @@
 # HiMem: Hierarchical Long-Term Memory for LLM Long-Horizon Agents
 
 **Authors:** Ningning Zhang, Xingxing Yang, Zhizhong Tan, Weiping Deng, Wenyong Wang  
-**Link:** https://arxiv.org/abs/2501.09123 (January 2026)  
+**Link:** [https://arxiv.org/abs/2501.09123](https://arxiv.org/abs/2601.06377) (January 2026)  
 **Submitted:** January 2026
 
 ## Abstract
